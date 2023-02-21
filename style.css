@@ -204,7 +204,9 @@ font-weight: bold;
     color: white;
     margin-top: 1px;
 }
-.imageprojects-items h2{
+
+
+.imageprojects-items h2,h3{
     display: flex;
     justify-content: start;
     padding: 10px;
@@ -222,6 +224,22 @@ font-weight: bold;
     height: 520px;
     border-radius: 20px 20px 20px 20px;
     
+}
+
+.imageprojects .imageprojects-items #project-store{
+    font-size: 15px;
+    margin-top: 30px;
+   
+}
+
+.imageprojects .imageprojects-items #project-bootcamp{
+    font-size: 15px;
+    margin-top: 40px;
+   
+}
+
+.mystacks #text-tecnologias{
+    margin-left: 120px;
 }
 
 
