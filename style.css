@@ -463,8 +463,8 @@ p{
     
     .saudacao{
         display: flex;
-        flex-direction: column;
-        margin-top: 90px;
+        flex-direction: row;
+        margin-top: 150px;
         margin-left: -100px;
     }
     .saudacao h1{
@@ -473,6 +473,7 @@ p{
         font-weight: 700px;
         font-size: 30px;
         margin-top: 300px;
+        
     }
     .saudacao span{
         font-family: 'Poppins';
@@ -487,9 +488,10 @@ p{
     }
 
     .picture{
-        display: flex;
-        flex-direction: column;
-        margin-left: 250px;
+     
+        margin-left: 0px;
+        width:10px;
+
     }
 
     /* .icons{
@@ -509,7 +511,7 @@ p{
         
         margin-left: 80px;
         
-        margin-right: -20px;
+        margin-right: -40px;
     }
 
     .icons-items #python{
@@ -615,7 +617,7 @@ p{
         justify-content: center;
     }
 
-/*HAMBURGUER*/
+/* HAMBURGUER
     nav .menu-lines{
         position: absolute;
         z-index: 999;
@@ -623,9 +625,9 @@ p{
         height: 35px;
         margin-left: -200px;
 
-    }
+    } */
 /* CHECKBOX FALSO*/
-    .menu-faketrigger{
+    /* .menu-faketrigger{
         position: absolute;
         z-index: 998;
         width: 35px;
@@ -633,11 +635,11 @@ p{
         margin-left: 100px;
         opacity: 0;
         cursor: pointer;
-    }
+    } */
 
 
     
-    nav .menu-lines span{
+    /* nav .menu-lines span{
         display: block;
         width: 35px;
         height: 5px;
@@ -665,7 +667,7 @@ p{
 
     } */
 
-    .menu-faketrigger:checked ~ .menu-lines span:nth-child(1){
+    /* .menu-faketrigger:checked ~ .menu-lines span:nth-child(1){
         transform-origin: 0% 0%;
         transform: rotate(45deg) scaleX(1.25);
 
@@ -694,7 +696,7 @@ p{
 
     .menu-faketrigger:checked ~ ul {
         margin-left: 0;
-    }
+    } */ 
 
 
     .form label{
