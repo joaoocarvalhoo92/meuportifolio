@@ -547,6 +547,8 @@ p{
         margin-left: 20px;
       }
 
+     
+
     .imageprojects{
         display: flex;
         flex-direction: column;
@@ -579,7 +581,7 @@ p{
    
 
     body{
-        margin-left: 20px;
+        margin-left: 40px;
     }
 
     .menu-footer-2{
