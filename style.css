@@ -183,6 +183,13 @@ font-weight: bold;
     word-wrap: break-word;
 
 }
+.imageprojects-items{
+    line-height: 20px;
+    
+}
+
+
+
 
 .imageprojects-items img{
     width: 375px;
@@ -194,7 +201,7 @@ font-weight: bold;
     display: flex;
     justify-content: center;
     font-family: var(--fonte-padrao);
-    color: var(--cinza-titulos-principais);
+    color: white;
     margin-top: 1px;
 }
 .imageprojects-items h2{
@@ -381,6 +388,23 @@ span.textgradient-final {
     margin-left: 50%;
     border-radius: 50px;
     background-image: linear-gradient(to right, #21b4ee, #1b49e0); 
+    cursor: pointer;
+    color: white;
+
+}
+.form button:hover{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    line-height: 40px;
+    font-family: var(--fonte-padrao);
+    font-weight: normal;
+    font-style: normal;
+    margin-top: 20px;
+    width: 100px;
+    margin-left: 50%;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #f0bb10, #eb1b8d); 
     cursor: pointer;
     color: white;
 
