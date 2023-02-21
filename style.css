@@ -337,6 +337,93 @@ span.textgradient-final {
 }
 
 
+.form{
+    color: white;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form textarea{
+    margin-top: 50px;
+    background:var(--cinza-titulos-principais) ;
+    border-radius: 50px;
+    font-family: var(--fonte-padrao);
+    font-style: normal;
+    font-weight: normal;
+    line-height: 20px;
+    color: black;
+    border:0;
+    width: 100%;
+    padding: 20px 0 0 20px;
+    font-size: 30px;
+}
+
+.form label{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-family: var(--fonte-padrao);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.form button{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    line-height: 40px;
+    font-family: var(--fonte-padrao);
+    font-weight: normal;
+    font-style: normal;
+    margin-top: 20px;
+    width: 100px;
+    margin-left: 50%;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #21b4ee, #1b49e0); 
+    cursor: pointer;
+    color: white;
+
+}
+
+label span{
+    display: grid;
+    grid-template-columns: 1fr;
+    color:#03bb85;
+    font-size: 25px;
+    align-items: center;
+    margin-left: 10px;
+}
+
+#nameperson{
+    color:white;
+    margin-left: 0;
+    padding: 0;
+}
+
+#text-nameperson{
+    margin-top: 5px;
+    background:var(--cinza-titulos-principais) ;
+    border-radius: 50px;
+    font-family: var(--fonte-padrao);
+    font-style: normal;
+    font-weight: normal;
+    line-height: 10px;
+    color: black;
+    border:0;
+    width: 400px;
+    padding: 2px 0 0 20px;
+    font-size: 30px;
+}
+
+.form #nameperson{
+    display: flex;
+    justify-content: start;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 3px;
+}
+
 
 
 
@@ -558,5 +645,52 @@ span.textgradient-final {
     .menu-faketrigger:checked ~ ul {
         margin-left: 0;
     }
+
+
+    .form label{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-size: px;
+        font-family: var(--fonte-padrao);
+        font-weight: normal;
+        font-style: normal;
+        margin-left: 50px;
+    }
+
+    .form{
+        color: white;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .form textarea{
+        margin-top: 50px;
+        background:var(--cinza-titulos-principais) ;
+        border-radius: 50px;
+        font-family: var(--fonte-padrao);
+        font-style: normal;
+        font-weight: normal;
+        line-height: 40px;
+        color: black;
+        border:0;
+        width: 150%;
+        padding: 20px 0 0 20px;
+        font-size: 20px;
+
+    }
+
+    .form button{
+        margin-left: 130px;
+    
+    }
+
+
+
+
+
+
+
 
 }
