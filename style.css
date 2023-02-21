@@ -366,6 +366,7 @@ span.textgradient-final {
     font-family: var(--fonte-padrao);
     font-weight: normal;
     font-style: normal;
+    margin-top: 80px;
 }
 
 .form button{
@@ -424,6 +425,10 @@ label span{
     margin-left: 3px;
 }
 
+p{
+    font-family: var(--fonte-padrao);
+    margin-bottom: 0;
+}
 
 
 
@@ -441,7 +446,7 @@ label span{
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
 
     /* MENU */
     .menu{
@@ -459,7 +464,19 @@ label span{
     .saudacao{
         display: flex;
         flex-direction: column;
-        margin-top: 150px;
+        margin-top: 90px;
+    }
+    .saudacao h1{
+        color: #D9D9D9;
+        font-family: 'Poppins';
+        font-weight: 700px;
+        font-size: 30px;
+        margin-top: 300px;
+    }
+    .saudacao span{
+        font-family: 'Poppins';
+        font-size: 30px;
+ 
     }
 
     .saudacao-items {
@@ -474,15 +491,15 @@ label span{
         margin-left: 200px;
     }
 
-    .icons{
+    /* .icons{
         display: flex;
         flex-direction: column;
-    }
+    }*/
     
     .icons-items{
         display: flex;
         flex-direction: column;
-    }
+    } *
 
     .icons-items #python{
         display: flex;
@@ -569,21 +586,23 @@ label span{
         justify-content: center;
     }
 
-
+/*HAMBURGUER*/
     nav .menu-lines{
         position: absolute;
         z-index: 999;
         width: 35px;
         height: 35px;
-        margin-left: -200px;
+        margin-left: 50px;
     }
-
+/* CHECKBOX FALSO*/
     .menu-faketrigger{
         position: absolute;
-        z-index: 999;
+        z-index: 998;
         width: 35px;
         height: 35px;
-        margin-left: -200px;
+        margin-left: 50px;
+        opacity: 0;
+        cursor: pointer;
     }
 
 
@@ -606,8 +625,9 @@ label span{
         height: 35px;
         opacity: 0;
         cursor: pointer;
-        margin-left: -200px;
+        margin-left: 50px;
     }
+
 
     /* .menu-faketrigger:checked ~ .menu-lines span{
         background-color: black;
@@ -637,7 +657,7 @@ label span{
         z-index: 998;
         left: 0;
         width: 300px;
-        margin-left: -300px;
+        margin-left: 300px;
         transition: all ease .3s;
 
     }
@@ -685,9 +705,6 @@ label span{
         margin-left: 130px;
     
     }
-
-
-
 
 
 
