@@ -465,6 +465,7 @@ p{
         display: flex;
         flex-direction: column;
         margin-top: 90px;
+        margin-left: -100px;
     }
     .saudacao h1{
         color: #D9D9D9;
@@ -488,18 +489,28 @@ p{
     .picture{
         display: flex;
         flex-direction: column;
-        margin-left: 200px;
+        margin-left: 250px;
     }
 
     /* .icons{
         display: flex;
         flex-direction: column;
     }*/
-    
+
+  
     .icons-items{
-        display: flex;
-        flex-direction: column;
-    } *
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 455px;
+    
+    } 
+
+    .icons-items img {
+        
+        margin-left: 80px;
+        
+        margin-right: -20px;
+    }
 
     .icons-items #python{
         display: flex;
@@ -537,7 +548,16 @@ p{
     .imageprojects{
         display: flex;
         flex-direction: column;
+        margin-left: -10px;
     }
+    
+    .imageprojects-items{
+        width: 300px;
+    }
+    .imageprojects-items img{
+        width: 300px;
+    }
+
 
     .menufooter{
         display: flex;
@@ -565,8 +585,17 @@ p{
         flex-direction: column;
         height:20px ;
         margin-top: 20px;
+        width: 300px;
        
 
+    }
+
+    .menu-footer-2 ul{
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+        margin-left: -300px;
+ 
     }
 
     .menu-item-final{
@@ -592,7 +621,8 @@ p{
         z-index: 999;
         width: 35px;
         height: 35px;
-        margin-left: 50px;
+        margin-left: -200px;
+
     }
 /* CHECKBOX FALSO*/
     .menu-faketrigger{
@@ -600,7 +630,7 @@ p{
         z-index: 998;
         width: 35px;
         height: 35px;
-        margin-left: 50px;
+        margin-left: 100px;
         opacity: 0;
         cursor: pointer;
     }
@@ -625,7 +655,7 @@ p{
         height: 35px;
         opacity: 0;
         cursor: pointer;
-        margin-left: 50px;
+        margin-left: -200px;
     }
 
 
@@ -675,7 +705,8 @@ p{
         font-family: var(--fonte-padrao);
         font-weight: normal;
         font-style: normal;
-        margin-left: 50px;
+        margin-left: 0px;
+        width: 300px;
     }
 
     .form{
@@ -684,6 +715,7 @@ p{
         display: flex;
         flex-direction: column;
         justify-content: center;
+       
     }
     .form textarea{
         margin-top: 50px;
@@ -701,9 +733,18 @@ p{
 
     }
 
+    #text-nameperson{
+        width: 300px;
+        font-size: 20px;
+    }
+
     .form button{
-        margin-left: 130px;
+        margin-left: 100px;
     
+    }
+
+    #Contact{
+        width: 300px;
     }
 
 
