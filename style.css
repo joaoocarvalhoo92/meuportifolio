@@ -554,10 +554,10 @@ p{
     }
     
     .imageprojects-items{
-        width: 300px;
+        width: 350px;
     }
     .imageprojects-items img{
-        width: 300px;
+        width: 350px;
     }
 
 
@@ -722,16 +722,17 @@ p{
     .form textarea{
         margin-top: 50px;
         background:var(--cinza-titulos-principais) ;
-        border-radius: 50px;
+        border-radius: 10px;
         font-family: var(--fonte-padrao);
         font-style: normal;
         font-weight: normal;
         line-height: 40px;
         color: black;
         border:0;
-        width: 150%;
+        width: 300px;
         padding: 20px 0 0 20px;
         font-size: 20px;
+        height: 100px;
 
     }
 

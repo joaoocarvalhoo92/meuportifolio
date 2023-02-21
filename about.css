@@ -36,30 +36,7 @@ h2{
     height: 100vh;
 }
 
-.header {
-    display: flex;
-    background: #272727;
-    justify-content: flex-end;
-    height: 40px;
-    width: 100%;
-    padding: 10px;
-    align-items: center;
 
-
-}
-
-.menu {
-    display: flex;
-    margin-right: 20px;
-    align-items: center;
-}
-
-.menu li {
-    margin-left: 20px;
-    padding: 20px;
-    justify-content: center;
-  
-}
 body  {
     margin: 0;
     padding: 0;
@@ -80,443 +57,44 @@ body  {
 }
 
 
-.header {
+.header .menu{
     display: flex;
-    background: #272727;
-    justify-content: flex-end;
-    height: 40px;
-    width: 100%;
+    flex-direction: row;
+    justify-content: end;
+
+}
+
+.header .menu li{
     padding: 10px;
-    align-items: center;
-
-
-}
-
-.menu {
-    display: flex;
-    margin-right: 20px;
-    align-items: center;
-}
-
-.menu li {
-    margin-left: 20px;
-    padding: 20px;
-    justify-content: center;
-  
-}
-
-
-
-    /*EDITANDO AS TAGS LI E A */
-
-a{
-    color: #A7A7A7;
-    font-family: 'DM sans';
-    text-decoration: none;
-    font-size: 20px;
-    
-}
-
-li{
-    list-style-type: none;
-}
-
-.saudacao h1{
-    color: #D9D9D9;
-    font-family: 'Poppins';
-    font-weight: 700px;
-    font-size: 40px;
-    margin-top: 300px;
-}
-
-
-span {
-    font-size: 50px;
-    color: #03bb85;
-    font-weight: normal;
-}
-
-span.textgradient {
-
-background-image: linear-gradient(to right, #21b4ee, #1b49e0); 
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-font-weight: bold;
-
-}
-
-.picture img{
-    margin-top: 300px;
-    border-radius: 230px;
-    height: 349px;
-    width: 349px;
-    left: 855px;
-    top: 19px;
-    border-radius: 230px;
-    border: 5px solid transparent;
-    border-image: linear-gradient(to right, #21b4ee) 1;
-    background-image: linear-gradient(to right, #21b4ee, #1b49e0);
-    padding: 5px;
-  }
-    
-
-
-.saudacao{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-
-}
-
-.mystacks h1 {
-    display: flex;
-    margin-top: 200px;
-    justify-content: center;
-    font-family: var(--fonte-padrao);
-    font-size: 48px;
-    color: var(--cinza-titulos-principais);
-}
-
-.mystacks h2 {
-    display: flex;
-    line-height: 0.0;
-    justify-content: center;
-    font-family: var(--fonte-padrao);
-    font-size: 32px;
-    color: var(--cinza-titulos-principais);
-    font-weight: normal;
-}
-
-
-.icons {
-    display: flex;
-
-    justify-content: center;
-
-    
-}
-
-.icons-items {
-    display: flex;
-    justify-content: space-between;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-}
-
-.icons-items img {
-    display: flex;
-    margin-left: 130px;
-    margin-top: 100px;
-    margin-right: 10px;
-}
-
-.icons-items #python {
-    width: 120px;
-    height: 120px;
-
-}
-
-.projects{
-    display: flex;
-    flex-direction: column;
-}
-
-.projects h1 {
-    display: flex;
-    justify-content: center;
-
-    font-family: var(--fonte-padrao);
-    color: var(--cinza-titulos-principais);
-    font-size: 48px;
-    margin-top: 200px;
-
-}
-
-.projects h2 {
-    display: flex;
-    justify-content: center;
-
-    font-family: var(--fonte-padrao);
-    color: var(--cinza-palavras-menores);
-    font-weight: normal;
-    font-size: 32px;
-    line-height: 0.0;
-    margin-bottom: 150px;
-    word-wrap: break-word;
-
-}
-
-.imageprojects-items img{
-    width: 375px;
-    height: 260px;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.imageprojects-items h1{
-    display: flex;
-    justify-content: center;
-    font-family: var(--fonte-padrao);
-    color: var(--cinza-titulos-principais);
-    margin-top: 1px;
-}
-.imageprojects-items h2{
-    display: flex;
-    justify-content: start;
-    padding: 10px;
-    font-family: var(--fonte-padrao);
-    color: #CCCCCC;
-    font-weight: normal;
-    margin-top: 1px;
-    font-size: 15px;
-    margin-bottom: 0px;
-}
-
-.imageprojects-items{
-    background: #363636;
-    width: 375px;
-    height: 520px;
-    border-radius: 20px 20px 20px 20px;
-    
-}
-
-
-
-.imageprojects-items a {
-    font-weight: normal;
-    display: flex;
-    margin-left: 35%;
-    font-family: var(--fonte-padrao);
-    color: #CCCCCC;
-    font-weight: normal;
-    font-size: 16px;
-    text-decoration: underline;
-    margin-top: 20%;
-    text-align: center;
-    
-    
-}
-
-.imageprojects{
-    display: flex;
-    display: grid;
-    justify-content: center;
-    flex-wrap: wrap;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 25px;
-    
-
-}
-
-
-footer{
     height: 200px;
-    margin-top: 300px;
-}
 
-.menufooter-items-superiores{
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    border-bottom: 1px solid #42446E;
-
-    padding-bottom: 50px;
-}
-
-.menufooter-items-superiores img {
-    width: 30px;
-    height: 29px;
-    margin-right: 10px;
-    margin-left: 20px;
-}
-.menufooter-items-superiores h2 {
-    font-size: 18px;
-    font-family: var(--fonte-padrao);
-    color: var(--cinza-palavras-menores);
-    font-weight: normal;
-}
-
-
-
-.menu-item-final {
-    display: flex;
-    margin-right: 20px;
-    justify-content: space-between;
-}
-
-.menu-item-final li {
-    margin-left: 0px;
-    padding: 5px;
-    justify-content: center;
-    align-items: center;
-  
-}
-
-.textfinal{
-    display: flex;
-    justify-content: end;
-    color: #666666;
-    font-family: var(--fonte-padrao);
-    font-style: normal;
-    font-size: 15px;
-    line-height: 35px;
-    
-
-}
-
-.menu-footer-2 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 40px;
-}
-
-
-span.textgradient-final {
-
-    background-image: linear-gradient(to right, #21b4ee, #1b49e0); 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-    font-size: 25px;
-    
-    }
-
-.direitos-reservados{
-    display: flex;
-    justify-content: center;
-}
-
-.direitos-reservados h2{
-    color: #666666;
-    font-family: var(--fonte-padrao);
-    font-size: 15px;
-}
-
-
-.menu-item-final li {
-    margin-left: 40px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ }
 
 @media only screen and (max-width: 600px) {
 
-    /* MENU */
-    .menu{
+    .header .menu{
         display: flex;
-        flex-direction: column;
-        height:20px ;
-        margin-top: 20px;
-       
-
-    }
-    .header{
+        flex-direction: row;
+        justify-content: end;
         background: black;
     }
+
+    .header .menu li{
+        padding: 10px;
+        height: 200px;
+   
+     }
+
+     h2{
+        width: 400px;
+        margin-left: 10px;
+        margin-right: 10px;
+     }
+
+     body {
+        margin-left:20px;
+        margin-right: 10px;
     
-    body{
-        margin-left: 20px;
-    }
-
- 
-
-
-    nav .menu-lines{
-        position: absolute;
-        z-index: 999;
-        width: 35px;
-        height: 35px;
-        margin-left: 150px;
-    }
-
-    .menu-faketrigger{
-        position: absolute;
-        z-index: 998;
-        width: 35px;
-        height: 35px;
-        margin-left: 150px;
-    }
-
-
-    
-    nav .menu-lines span{
-        display: block;
-        width: 35px;
-        height: 5px;
-        margin-bottom: 10px;
-        background-color: var(--cinza-titulos-principais);
-        border-radius: 3px;
-        transition: all ease .2s;
-    
-    }
-
-    .menu-faketrigger{
-        position: absolute;
-        z-index: 1000;
-        width: 35px;
-        height: 35px;
-        opacity: 0;
-        cursor: pointer;
-        margin-left: 100px;
-    }
-
-    /* .menu-faketrigger:checked ~ .menu-lines span{
-        background-color: black;
-
-
-    } */
-
-    .menu-faketrigger:checked ~ .menu-lines span:nth-child(1){
-        transform-origin: 0% 0%;
-        transform: rotate(45deg) scaleX(1.25);
-
-    }
-
-.menu-faketrigger:checked ~ .menu-lines span:nth-child(2){
-    opacity: 0;
-
-    }
-
-.menu-faketrigger:checked ~ .menu-lines span:nth-child(3){
-    transform-origin: 0% 100%;
-    transform: rotate(-45deg) scaleX(1.25);
-
-    }
-
-    .header ul {
-        position: absolute;
-        z-index: 998;
-        left: 0;
-        width: 300px;
-        margin-left: 1000px;
-        transition: all ease .3s;
-
-    }
-
-    .menu-faketrigger:checked ~ ul {
-        margin-left: 220px;
-        margin-top: 50px;
-    }
-
-    h2{
-        font-size: 15px;
-    }
+     }
 
 }
