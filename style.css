@@ -492,6 +492,18 @@ p{
     margin-bottom: 0;
 }
 
+.menu-footer-icons{
+    display: flex;
+    justify-content: end;
+    padding: 20px;
+}
+
+.menu-footer-icons a{
+    display: flex;
+    
+    padding: 20px;
+}
+
 
 
 
