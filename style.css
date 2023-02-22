@@ -69,16 +69,13 @@ li{
     list-style-type: none;
 }
 
-.saudacao h1{
+.saudacao h1 {
     color: #D9D9D9;
     font-family: 'Poppins';
     font-weight: 700px;
     font-size: 40px;
     margin-top: 300px;
-    margin
-   
 }
-
 
 
 
@@ -88,12 +85,12 @@ span {
     font-weight: normal;
 }
 
-span.textgradient {
+    span.textgradient {
 
-background-image: linear-gradient(to right, #21b4ee, #1b49e0); 
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-font-weight: bold;
+    background-image: linear-gradient(to right, #21b4ee, #1b49e0); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
 
 }
 
@@ -379,6 +376,7 @@ span.textgradient-final {
     color: #666666;
     font-family: var(--fonte-padrao);
     font-size: 15px;
+    margin: 50px;
 }
 
 
