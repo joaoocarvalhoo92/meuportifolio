@@ -17,17 +17,12 @@ body  {
     --fonte-padrao:'Poppins';
 }
 
-.header {
-    display: flex;
-    background: #272727;
-    justify-content: flex-end;
-    height: 40px;
+/* .header {
     width: 100%;
     padding: 10px;
-    align-items: center;
 
 
-}
+} */
 
 .menu {
     display: flex;
@@ -36,12 +31,28 @@ body  {
 }
 
 .menu li {
+
     margin-left: 20px;
-    padding: 20px;
-    justify-content: center;
+    padding: 24px;
   
 }
 
+.icons-menu{
+    display: flex;
+    justify-content: end;
+    
+    
+}
+
+.icons-menu li {
+    padding: 10px;
+}
+
+.header {
+    display: flex;
+
+    align-items: center;
+}
 
 
     /*EDITANDO AS TAGS LI E A */
@@ -65,6 +76,8 @@ li{
     font-size: 40px;
     margin-top: 300px;
 }
+
+
 
 
 span {
@@ -486,17 +499,50 @@ p{
 
 
 
+
+
 @media only screen and (max-width: 800px) {
 
     /* MENU */
     .menu{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-around;
         height:20px ;
         margin-top: 20px;
+        margin-left: 0px;
        
 
     }
+
+    #svglinkedin{
+        margin-right: 0px;
+        padding: 0px;
+    }
+
+    #svggithub{
+       margin-right: 0px;
+        padding: 10px;
+    }
+
+    .menu  a {
+        display: flex;
+        margin-left: -75px;
+        font-size: 14px;
+        margin-right: 0px;
+        justify-content: space-between;
+    
+    }
+
+    .icons-menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        margin-left: -300px;
+        margin-top:50px;
+    }
+
+ 
     .header{
         background: black;
     }
@@ -504,7 +550,6 @@ p{
     .saudacao{
         display: flex;
         flex-direction: row;
-        margin-top: 150px;
         margin-left: -100px;
     }
     .saudacao h1{
@@ -526,7 +571,7 @@ p{
         flex-direction: column;
         margin-left: 100px;
         margin-bottom: 0px;
-        line-height: 30px;
+        line-height: px;
     }
 
     .picture{
@@ -793,10 +838,7 @@ p{
     
     }
 
-    #Contact{
-        width: 300px;
-    }
-
+   
     .saudacao{
         display: flex;
         flex-direction: column;
@@ -804,6 +846,28 @@ p{
 
     .saudacao .picture {
         line-height: 0px;
+     
+    }
+
+    .icons-menu{
+        display: flex;
+        justify-content: end;
+        
+        
+    }
+    
+    .icons-menu li {
+        display: flex;
+        justify-content: start;
+    }
+    
+    .header {
+        display: flex;
+        align-items: start;
+    }
+
+    #contact{
+        width: 10px;
     }
 
 
