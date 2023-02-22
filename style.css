@@ -125,6 +125,7 @@ font-weight: bold;
     font-family: var(--fonte-padrao);
     font-size: 48px;
     color: var(--cinza-titulos-principais);
+    margin-left: 100px;
 }
 
 .mystacks h2 {
@@ -135,6 +136,7 @@ font-weight: bold;
     font-size: 32px;
     color: var(--cinza-titulos-principais);
     font-weight: normal;
+
 }
 
 
@@ -151,6 +153,7 @@ font-weight: bold;
     justify-content: space-between;
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    margin-left: -100px;
 }
 
 .icons-items img {
@@ -251,7 +254,7 @@ font-weight: bold;
 }
 
 .mystacks #text-tecnologias{
-    margin-left: 120px;
+    margin-left: 0px;
 }
 
 
@@ -388,6 +391,7 @@ span.textgradient-final {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 .form textarea{
     margin-top: 50px;
@@ -412,6 +416,7 @@ span.textgradient-final {
     font-weight: normal;
     font-style: normal;
     margin-top: 80px;
+    
 }
 
 .form button{
@@ -483,14 +488,13 @@ p{
 
 .menu-footer-icons{
     display: flex;
-    justify-content: end;
-    padding: 20px;
+    justify-content: start;
+    
 }
 
 .menu-footer-icons a{
     display: flex;
-    
-    padding: 20px;
+
 }
 
 
@@ -592,6 +596,8 @@ p{
     }
     .picture img {
         margin-top: 0px;
+        margin-left: -150px;
+        padding: 2px;
     }
 
     /* .icons{
@@ -652,7 +658,7 @@ p{
     .imageprojects{
         display: flex;
         flex-direction: column;
-        margin-left: -10px;
+        margin-left: 20px;
     }
     
     .imageprojects-items{
@@ -693,8 +699,16 @@ p{
     }
    
 
-    body{
-        margin-left: 40px;
+    body  {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        background: black;
+        margin-left: 0px;
+        margin-right: 0px;
+        box-sizing: border-box;
+    
     }
 
     .menu-footer-2{
@@ -711,7 +725,7 @@ p{
         display: flex;
         flex-direction: column;
         font-size: 10px;
-        margin-left: -300px;
+        margin-left: -400px;
  
     }
 
@@ -822,7 +836,7 @@ p{
         font-family: var(--fonte-padrao);
         font-weight: normal;
         font-style: normal;
-        margin-left: 0px;
+        margin-left: 10px;
         width: 300px;
     }
 
@@ -832,6 +846,7 @@ p{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin-left: 10px;
        
     }
     .form textarea{
