@@ -432,20 +432,9 @@ span.textgradient-final {
 
 }
 .form button:hover{
-    display: flex;
-    justify-content: center;
-    font-size: 15px;
-    line-height: 40px;
-    font-family: var(--fonte-padrao);
-    font-weight: normal;
-    font-style: normal;
-    margin-top: 20px;
-    width: 100px;
-    margin-left: 50%;
-    border-radius: 50px;
     background-image: linear-gradient(to right, #f0bb10, #eb1b8d); 
-    cursor: pointer;
-    color: white;
+    
+   
 
 }
 
