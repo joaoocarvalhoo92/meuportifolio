@@ -75,6 +75,8 @@ li{
     font-weight: 700px;
     font-size: 40px;
     margin-top: 300px;
+    margin
+   
 }
 
 
@@ -153,7 +155,7 @@ font-weight: bold;
     justify-content: space-between;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    margin-left: -100px;
+    margin-left: -80px;
 }
 
 .icons-items img {
@@ -163,9 +165,9 @@ font-weight: bold;
     margin-right: 10px;
 }
 
-.icons-items #python {
-    width: 120px;
-    height: 120px;
+#python {
+    width: 94px;
+    height: 105px;
 
 }
 
@@ -583,9 +585,8 @@ p{
     .saudacao-items {
         display: flex;
         flex-direction: column;
-        margin-left: 100px;
+        margin-left: 102px;
         margin-bottom: 0px;
-        line-height: px;
     }
 
     .picture{
@@ -620,14 +621,7 @@ p{
         margin-right: -40px;
     }
 
-    .icons-items #python{
-        display: flex;
-        flex-direction: column;
-        width: 65%;
-        height: 65%;
-        margin-left: 110px;
-    }
-
+   
     
       .projects h2{
         font-size: 20px;
