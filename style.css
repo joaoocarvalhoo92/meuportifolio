@@ -97,6 +97,7 @@ header {
         color: #D9D9D9;
         font-family: 'Poppins';
         font-size: 40px;
+        margin-left: 20px;
     }
 
     .picture img{
@@ -522,6 +523,9 @@ input{
         width: 100%;
         font-size: 100rem;
         word-wrap: break-word;
+    }
+    .saudacao h1{
+        margin-left: 20px;
     }
 
    
