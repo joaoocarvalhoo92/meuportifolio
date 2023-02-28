@@ -487,6 +487,7 @@ input{
     #burguer{
         display: block;
         height: 0px;
+        padding: 15px 0px 0px 10px;
     }
 
     header{
@@ -595,11 +596,13 @@ input{
     }
 
     #digite-nome{
-        width: 200px
+        width: 200px;
+        font-size:20px;
+        line-height: 50px;
     }
 
     #digite-nome::placeholder{
-        font-size: 50%;
+        font-size: 15px;
         padding: 0px;
         line-height: 0px;
     }
@@ -613,12 +616,16 @@ input{
     textarea{
         width: 40%;
         margin-left: 150px;
+        font-size: 20px;
+        line-height: 20px;
     }
 
     textarea::placeholder{
         line-height:40px;
         padding: 0px;
     }
+
+    
 
 
 
