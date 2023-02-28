@@ -5,30 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Hubballi&family=Inter:wght@400;700&family=Montserrat:wght@600&family=Poppins:wght@400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
     <title>Dev João Carvalho</title>
 </head>
 <body>
-    <header class="header">
+  
+  
+    <!--  TRABALHANDO O MENU DO TOPO-->
+    <header>
+        <div onclick="clickBurguer()" id="burguer" class="material-symbols-outlined">
+            menu
+        </div>
+        <div class="icons-menu">
+            <li><a target="_blank" href="https://github.com/joaoocarvalhoo92"><img src="svgs/github.svg"></a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/joaocarvalho412753162/"><img src="svgs/linkedin.svg"></a></li>
+        </div>
+        <menu id="menu">
             <ul class="menu">
                 <li><a href="#home" class="active">Inicio</a></li>
                 <li><a target="_blank" href="about.html">Sobre</a></li>
                 <li><a href="#mystacks">Techs</a></li>
                 <li><a href="#projects">Projetos</a></li>
                 <li><a href="#Contact">Contato</a></li>
-
             </ul>
-            <div class="icons-menu">
-                <li><a target="_blank" href="https://github.com/joaoocarvalhoo92"><img src="svgs/github.svg"></a></li>
-                <li><a target="_blank" href="https://www.linkedin.com/in/joaocarvalho412753162/"><img src="svgs/linkedin.svg"></a></li>
-            </div>
-        </nav>
+        </menu>
+
     </header>
-    <section class="saudacao" id="home">
-        <h1 class="saudacao-items">
+
+  <!--  TRABALHANDO A SEÇÃO DE SAUDAÇÃO E MINHA FOTO AVATAR-->
+    <section class="saudacao">
+        <h1 class="saudacao-texto">
             <span><</span>Oi 👋, seja bem vindo(a)<br>
             Meu nome é<br>
             <span class="textgradient">
@@ -40,27 +51,27 @@
             <img src="pngs/euavatar.jpg" alt="">
         </div>
     </section>
+
+      <!--  TRABALHANDO A SEÇÃO DE TECNOLOGIAS QUE TRABALHO-->
     <section class="mystacks" id="mystacks">
-        <h1 id="text-tecnologias">Tecnologias</h1>
-        <h2>Tecnologias que tenho trabalhado ultimamente</h2>
-    </section>
-    <section class="icons">
-        <div class="icons-items">
+            <h1 >Tecnologias</h1>
+            <h2>Tecnologias que tenho trabalhado ultimamente</h2>
+        <div class="icons-stacks">
             <img src="svgs/html.svg">
             <img src="svgs/css.svg">
             <img src="svgs/js.svg">
             <img src="svgs/studiocode.svg">
             <img src="svgs/git.svg">
-            <img id="python" src="svgs/python.svg">
+            <img id="svg-python" src="svgs/python.svg">
         </div>
     </section>
+
+     <!--  TRABALHANDO A SEÇÃO PROJETOS QUE FIZ ATÉ AGORA-->
     <section class="projects" id="projects">
-        <div>
+        <div class="title-projects">
             <h1>Projetos</h1>
             <h2>Coisas que construí até agora</h2>
         </div>
-    </section>
-    <section class="imageprojects">
         <div class="imageprojects-items">
             <img src="pngs/portifioliomaria.png">
             <h1>Portfolio
@@ -71,8 +82,8 @@
         </div>
         <div class="imageprojects-items">
             <img  src="pngs/sistemaComercio.png">
-            <h1>System para loja</h1>
-            <h2>Estou trabalhando neste projeto, desenvolvendo meu próprio sistema desktop para uma loja de roupas, mas ele pode ser adaptado para outras necessidades.</h2>
+            <h1>Sistema para loja</h1>
+            <h2>Estou trabalhando neste projeto, desenvolvendo meu próprio sistema <br>desktop para minha loja de roupas, mas ele pode ser adaptado para outras necessidades.</h2>
             <h3>Techs: Python e SQLServer</h3>
             <a id="project-store" target="_blank" href="https://github.com/joaoocarvalhoo92/sistemaLoja">Ver Código</a>
         </div>
@@ -93,34 +104,40 @@
             <a  id="project-bootcamp" target="_blank" href="https://github.com/joaoocarvalhoo92/projetoBootcampDNC">Ver Código</a>
         </div>
     </section>
-    <form class="form" action="https://formspree.io/f/mjvdweoa" method="POST">
-        <label class="text-label">
-            Deixe-me uma mensagem aqui <br>
-            <span> Isso será motivador.</span>
-        </label>
-        <label id="nameperson">
-            Digite seu nome : 
-        </label>
-        
-        <input name="Names" id="text-nameperson" placeholder="Escreva o seu nome aqui" type="text">
-        <p>*Não obrigatório</p>
-        <textarea class="textplaceholder" rows="10" cols="20" name="Mensagem"placeholder="Digite sua mensagem aqui" type="text" required="required"></textarea>
-            <button  type="submit">Enviar</button>
-    </form>
-    <footer>
-        <div class="menufooter" id="Contact">
-            <div class="menufooter-items-superiores">
-                <!-- <img src="tel.svg" href="/"></a> -->
+
+      <!--  TRABALHANDO A SEÇÃO FORMÚLARIO-->
+    <section class="form">
+        <form class="form" action="https://formspree.io/f/mjvdweoa" method="POST">
+            <h2>
+                Deixe-me uma mensagem aqui <br>
+                <span> Isso será motivador.</span>
+            </h2>
+            <label  class="digite-nome">
+                Digite seu nome : 
+            </label>
+            
+            <input  id="digite-nome" name="Names" id="text-nameperson" placeholder="Escreva o seu nome aqui" type="text">
+            <p>*Não obrigatório</p>
+            <div class="textarea-submit">
+                <textarea class="textplaceholder" rows="10" cols="20" name="Mensagem"placeholder="Digite sua mensagem aqui" type="text" required="required"></textarea>
+                <button  type="submit">Enviar</button>
+            </div>
+         </form>
+    </section>
+          <!--  TRABALHANDO O RODAPÉ-->
+    <footer class="footer-contact" id="Contact">
+            <div class="email-tel">
                 <h2>55+(11)98538-6994</h2>
-                <img src="svgs/outlook.svg" href="/"></a>
                 <h2>joao12carvalho@hotmail.com</h2>
             </div>
             <div class="menu-footer-icons">
                 <li><a target="_blank" href="https://github.com/joaoocarvalhoo92"><img src="svgs/github.svg"></a></li>
                 <li><a target="_blank" href="https://www.linkedin.com/in/joaocarvalho412753162/"><img src="svgs/linkedin.svg"></a></li>
             </div>
-                <nav class="menu-footer-2">
-                <ul class="menu-item-final">
+    </footer>
+
+        <footer class="footer-menu">
+                <ul>
                     <li><a href="#home">Inicio</a></li>
                     <li><a target="_blank" href="about.html">Sobre</a></li>
                     <li><a href="#mystacks">Techs</a></li>
@@ -128,17 +145,12 @@
                     <li><a href="#Contact">Contato</a></li>
                 </ul>
                 <div class="textfinal">
-                    <h2>Projetado e construído por <span class="textgradient-final">João Carvalho</span></h2>
+                    <h2>Projetado e construído por <br><span class="textgradient">João Carvalho</span></h2>
                 </div>
-            </nav>
-            <footer class="direitos-reservados">
-                <div>
-                    <h2>© devjoaocarvalho 2023. <br> 
-                        Todos os direitos-reservados.</h2>
-                </div>
-
-            </footer>
-        </div>
+        </footer>
+    <footer class="direitos-reservados">
+        <h2>© devjoaocarvalho 2023. <br> 
+            Todos os direitos-reservados.</h2>
     </footer>
 </body>
 </html>
