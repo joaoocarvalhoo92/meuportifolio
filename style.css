@@ -758,11 +758,15 @@ input{
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-left: 20px;
 }
 .footer-menu ul{
     display: flex;
     flex-direction: column;
+    line-height: 60px;
 }
+
+
 
 
 

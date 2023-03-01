@@ -1,15 +1,15 @@
+function menuOnClick() {
+    document.getElementById("menu-bar").classList.toggle("change");
+    document.getElementById("nav").classList.toggle("change");
+    document.getElementById("menu-bg").classList.toggle("change-bg");
+    document.getElementById("nav").classList.toggle("show");
+  
 
-function clickBurguer() {
-    if( menu.style.display == 'block'){
-        menu.style.display='none'
-    }else{
-        menu.style.display = 'block'
-    }
-    function clickBurguer() {
-        const menu = document.getElementById("menu");
-        menu.classList.toggle("active");
+  //Adiciona ou remove a classe menu-open na página
+  document.querySelector('.page-content').classList.toggle('menu-open');
+  
+  
 
-}
 }
 
 
