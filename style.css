@@ -850,3 +850,27 @@ input{
     margin-left: 15px;
 }
 
+
+
+
+
+
+@media screen and (max-width:800px){
+
+    .to-email{
+        width: 150px;
+        margin-left:105px;
+        
+      }
+
+      .to-email a{
+        color: white;
+      }
+
+
+
+
+
+
+
+}
