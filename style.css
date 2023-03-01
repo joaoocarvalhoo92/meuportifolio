@@ -107,6 +107,21 @@ header {
         }
       }
 
+      .picture{
+        display: flex;
+        flex-direction: column;
+    
+      }
+
+      .to-email{
+        width: 150px;
+        margin-left:70px;
+        
+      }
+
+      .to-email a{
+        color: white;
+      }
 
     span {
         font-size: 50px;
@@ -609,6 +624,17 @@ input{
     .saudacao h1{
         font-size: 1.8rem;
     }
+
+    .to-email{
+        width: 150px;
+        margin-left:50px;
+        
+      }
+
+      .to-email a{
+        color: white;
+      }
+
 
    
    
