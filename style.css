@@ -3,7 +3,7 @@ body{
     margin:0px;
     box-sizing: border-box;
     font-family: var(--fonte-padrao);
-    background: black;
+    background: #000;
 }
 
 
@@ -18,26 +18,10 @@ body{
 
 /*MENU HAMBURGUER */
 
-.material-symbols-outlined{
-    color: var(--cinza-titulos-principais);
-}
-
-#burguer{
-    width: 50%;
-    margin: 0;
-}
 
 
-#burguer:hover{
-    color: white;
-    cursor: pointer;
-}
 
-#burguer{
-    display: none;
-    
-   
-}
+
 
 
 a{
@@ -97,7 +81,6 @@ header {
         color: #D9D9D9;
         font-family: 'Poppins';
         font-size: 40px;
-        margin-left: 20px;
     }
 
     .picture img{
@@ -477,18 +460,126 @@ input{
 /* ------------------------- MENU ------------------------------*/
 @media screen and (max-width:800px){
 
+ 
+    #menu{
+        z-index: 2;
+    }
+    
+    
+    #menu-bar {
+        width: 30px;
+        height: 50px;
+        margin: 0px 0 20px 20px;
+        cursor: pointer;
+      }
+      
+      .bar {
+        height: 3px;
+        width: 100%;
+        background-color: #05ebfc;
+        display: block;
+        border-radius: 90px;
+        transition: 0.3s ease;
+      }
+    
+      #bar1 {
+        transform: translateY(-4px);
+      }
+    
+      #bar3 {
+        transform: translateY(4px);
+      }
+    
+      .nav {
+        transition: 0.3s ease;
+        display: none;
+      }
+    
+      .nav ul {
+        padding: 0 22px;
+      }
+    
+      .nav li {
+        list-style: none;
+        padding: 12px 0;
+      }
+    
+      .nav li a {
+        color: var(--cinza-titulos-principais);
+        font-size: 20px;
+        text-decoration: none;
+        padding: 20px;
+      }
+    
+      .nav li a:hover {
+        font-weight: bold;
+      }
+    
+      .menu-bg, #menu {
+        top: 0;
+        left: 0;
+        position: absolute;
+      }
+    
+      .menu-bg {
+        z-index: 1;
+        width: 0;
+        height: 0;
+        margin: 30px 0 20px 20px;
+        border-radius: 50%;
+        transition: 0.3s ease;
+      }
+    
+      .change {
+        display: block;
+      }
+      
+      .change .bar {
+        background-color: #05ebfc;
+      }
+    
+      .change #bar1 {
+        transform: translateY(4px) rotateZ(-45deg);
+      }
+    
+      .change #bar2 {
+        opacity: 0;
+      }
+      .change #bar3 {
+        transform: translateY(-6px) rotateZ(45deg);
+      }
+    
+      .change-bg {
+        width: 520px;
+        height: 460px;
+        transform: translate(-60%,-30%);
+      }
+    
+      /* Classe para a página quando o menu é aberto */
+    .page-content.menu-open {
+        position: relative;
+        top: 400px; /* ou a altura do seu menu, se for diferente */
+      }
+    
+      /* Classe para a transição de posicionamento da página */
+    .page-content {
+        transition: top 0.3s ease;
+      }
+
+
+
     .menu{
         display: block;
         flex-direction: column;
         margin-left: -100px;
         line-height: 50px;
         background: rgba(209, 216, 219, 0.1);
+        width:100vw;
     }
 
     #burguer{
         display: block;
         height: 0px;
-        padding: 15px 0px 0px 10px;
     }
 
     header{
@@ -523,9 +614,6 @@ input{
         width: 100%;
         font-size: 100rem;
         word-wrap: break-word;
-    }
-    .saudacao h1{
-        margin-left: 20px;
     }
 
    
@@ -578,7 +666,7 @@ input{
     .form{
         display: flex;
         flex-direction: column;
-        width: 85%;
+        width: 80%;
     }
 
     .form h2,span{
@@ -590,9 +678,8 @@ input{
         display: flex;
         font-size: 1.5rem;
         align-items: center;
-        margin-left: 30px;
+        margin-left: 50px;
         word-wrap: break-word;
-        width: 100%;
     }
 
     .form button{
@@ -600,13 +687,11 @@ input{
     }
 
     #digite-nome{
-        width: 200px;
-        font-size:20px;
-        line-height: 50px;
+        width: 100%
     }
 
     #digite-nome::placeholder{
-        font-size: 15px;
+        font-size: 50%;
         padding: 0px;
         line-height: 0px;
     }
@@ -614,22 +699,19 @@ input{
     .form p{
         font-size: 1rem;
         align-items: center;
-        width: 160px;
+        margin-left: 0px;
+        width: 100px;
     }
 
     textarea{
-        width: 40%;
+        width: 55%;
         margin-left: 150px;
-        font-size: 20px;
-        line-height: 20px;
     }
 
     textarea::placeholder{
         line-height:40px;
         padding: 0px;
     }
-
-    
 
 
 
@@ -646,15 +728,18 @@ input{
 .email-tel{
     display: flex;
     flex-direction: column;
-    margin-left: -40px;
-    width:20 %;
+    margin-left: 50px;
+    width: 100%;
 
 }
 
+.email-tel img{
+    width: 10%;
+
+}
 
 .email-tel h2{
     font-size: 0.9rem;
-    width: 200px;
 }
 
 
@@ -680,9 +765,7 @@ input{
 }
 
 
-.textfinal{
-    width: 100%;
-    margin-left: 10px;
-}
+
+
 
 }

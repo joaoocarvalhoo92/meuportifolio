@@ -10,33 +10,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Hubballi&family=Inter:wght@400;700&family=Montserrat:wght@600&family=Poppins:wght@400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="app.js"></script>
     <title>Dev João Carvalho</title>
 </head>
 <body>
   
-  
     <!--  TRABALHANDO O MENU DO TOPO-->
     <header>
-        <div onclick="clickBurguer()" id="burguer" class="material-symbols-outlined">
-            menu
-        </div>
         <div class="icons-menu">
             <li><a target="_blank" href="https://github.com/joaoocarvalhoo92"><img src="svgs/github.svg"></a></li>
             <li><a target="_blank" href="https://www.linkedin.com/in/joaocarvalho412753162/"><img src="svgs/linkedin.svg"></a></li>
         </div>
         <menu id="menu">
-            <ul class="menu">
-                <li><a href="#home" class="active">Inicio</a></li>
-                <li><a target="_blank" href="about.html">Sobre</a></li>
-                <li><a href="#mystacks">Techs</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#Contact">Contato</a></li>
-            </ul>
+            <div id="menu-bar" onclick="menuOnClick()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <nav class="nav" id="nav">
+                <ul class="menu">
+                    <li><a href="#home" class="active">Inicio</a></li>
+                    <li><a target="_blank" href="about.html">Sobre</a></li>
+                    <li><a href="#mystacks">Techs</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#Contact">Contato</a></li>
+                </ul>
+            </nav>
         </menu>
-
+        <div class="menu-bg" id="menu-bg"></div>
     </header>
-
+<main class="page-content">
   <!--  TRABALHANDO A SEÇÃO DE SAUDAÇÃO E MINHA FOTO AVATAR-->
     <section class="saudacao">
         <h1 class="saudacao-texto">
@@ -152,5 +156,6 @@
         <h2>© devjoaocarvalho 2023. <br> 
             Todos os direitos-reservados.</h2>
     </footer>
+</main>
 </body>
 </html>
