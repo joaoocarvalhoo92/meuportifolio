@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+}
+
+
 body{
     padding: 0px;
     margin:0px;
@@ -15,14 +20,6 @@ body{
 }
 
 /* ------------------------------------------- TRABALHANDO NO MENU HEADER -----------------------------*/
-
-/*MENU HAMBURGUER */
-
-
-
-
-
-
 
 a{
     text-decoration: none;
@@ -75,6 +72,7 @@ header {
     align-items: center;
     justify-content: space-evenly;
     color: var(--cinza-titulos-principais);
+    margin-left: 15px;
     
 }
     .saudacao h1{
@@ -362,14 +360,18 @@ input{
 
 
 .footer-contact{
+    width: 100%;
+    margin-right: 50px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    margin-right: 50px;
     align-items: center;
     margin-top: 150px;
-    border-bottom: 2px solid var(--cinza-titulos-principais);
+    border-bottom: 1px solid var(--cinza-titulos-principais);
+   
 }
+
+
 
 .menu-footer-icons{
     display: flex;
@@ -404,7 +406,6 @@ input{
 
 .footer-menu{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     margin-right: 50px;
 
@@ -412,14 +413,10 @@ input{
 
 .footer-menu ul{
     display: flex;
+    flex-direction: row;
 
 }
 
-.footer-menu ul li {
-    display: flex;
-    margin-left: 10px;
-    
-}
 
 .textfinal h2{
     font-family: var(--fonte-padrao);
@@ -461,6 +458,12 @@ input{
 @media screen and (max-width:800px){
 
  
+    .page-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     #menu{
         z-index: 2;
     }
@@ -577,21 +580,9 @@ input{
         width:100vw;
     }
 
-    #burguer{
-        display: block;
-        height: 0px;
-    }
-
-    header{
-        display: block;
-    }
-
-    #burguer{
-        transition: color 0.3s ease-in-out;
-    }
-
     .icons-menu{
         margin-top: 10px;
+        margin-left: 100px;
     }
 
 
@@ -612,10 +603,14 @@ input{
 
     .saudacao-texto {
         width: 100%;
-        font-size: 100rem;
         word-wrap: break-word;
     }
 
+    .saudacao h1{
+        font-size: 1.8rem;
+    }
+
+   
    
 
 
@@ -625,12 +620,24 @@ input{
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-left: 30px;
     }
 
-    .mystacks h1,h2{
+    .mystacks h1{
         width:90%;
         word-wrap: break-word;
-        font-size: 2.5rem;
+        font-size: 2rem;
+    }
+
+    .mystacks h2{
+        width:80%;
+        font-size: 1.0rem;
+        height: 80px;
+    }
+
+    .icons-stacks img{
+        width: 35%;
+
     }
 
 
@@ -640,11 +647,17 @@ input{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    width: 90%;
+    
 }
 
-    .title-projects h1,h2{
-        font-size: 2.5rem;
+    .title-projects h1{
+        font-size: 2rem;
+        word-wrap: break-word;
+    }
+
+    .title-projects h2{
+        font-size: 1.0rem;
         word-wrap: break-word;
     }
 
@@ -652,7 +665,7 @@ input{
     .imageprojects-items{
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 100%;
         height: auto;
     }
 
@@ -660,57 +673,74 @@ input{
         font-size: 1rem;
     }
 
+    .title-projects{
+        height: 0px;
+    }
+
    
   /* ------------------------- FORMULARIO ------------------------------*/
   
-    .form{
+  .section-form{
         display: flex;
         flex-direction: column;
         width: 80%;
     }
 
-    .form h2,span{
-        font-size: 2rem;
+    .section-form h2,span{
+        font-size: 1.8rem;
         word-wrap:break-word;
     }
 
-    .form .digite-nome{
+    .section-form .digite-nome{
         display: flex;
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         align-items: center;
-        margin-left: 50px;
         word-wrap: break-word;
+        width: 80vw;
     }
 
-    .form button{
-        width: 25%;
+    .section-form button{
+        width: 50%;
+        margin-left: 50px;
+    }
+    input{
+        font-size: 1.0rem;
+        height: 50px;
     }
 
     #digite-nome{
-        width: 100%
+        width: 90vw;
     }
 
     #digite-nome::placeholder{
-        font-size: 50%;
-        padding: 0px;
-        line-height: 0px;
+        font-size: 13px;
+        word-wrap: break-word;
     }
 
     .form p{
         font-size: 1rem;
-        align-items: center;
-        margin-left: 0px;
-        width: 100px;
+        width: 90%;
+
     }
 
-    textarea{
-        width: 55%;
-        margin-left: 150px;
+   .textarea-submit{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+   }
+
+        
+
     }
 
     textarea::placeholder{
         line-height:40px;
-        padding: 0px;
+        font-size: 1.0rem;
+
+    }
+
+    textarea{
+        font-size: 1.0rem;
     }
 
 
@@ -721,7 +751,9 @@ input{
 .footer-contact{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
+    align-items: center;
+    
     
 }
 
@@ -758,7 +790,6 @@ input{
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-left: 20px;
 }
 .footer-menu ul{
     display: flex;
@@ -767,9 +798,22 @@ input{
 }
 
 
-
-
-
-
-
+.footer-contact{
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 150px;
+    border-bottom: 1px solid var(--cinza-titulos-principais);
+   
 }
+
+.textfinal{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
