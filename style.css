@@ -502,10 +502,25 @@ input{
     margin-left: 50px;
 }
 
+
+.footer-menu ul{
+    display: flex;
+    
+}
+.footer-menu ul li{
+    display: flex;
+    margin-left: 50px;
+    
+}
+
 /* -----------------------------------TRABALHANDO NA SEGUNDA PARTE DA SEÇÃO RODAPÉ -----------------------------*/
 
 
-
+.textfinal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .textfinal h2{
     font-family: var(--fonte-padrao);
@@ -809,7 +824,16 @@ input{
         font-size: 1.1rem;
         align-items: center;
         word-wrap: break-word;
-        width: 80vw;
+        width: 50vw;
+    }
+
+    #input-nome{
+        display: flex;
+        width: 90%;
+
+    }
+    #input-nome::placeholder{
+        font-size: 0.8rem;
     }
 
     .section-form button{
@@ -821,14 +845,9 @@ input{
         height: 50px;
     }
 
-    #digite-nome{
-        width: 90vw;
-    }
+    
 
-    #digite-nome::placeholder{
-        font-size: 13px;
-        word-wrap: break-word;
-    }
+   
 
     .form p{
         font-size: 1rem;
@@ -848,7 +867,7 @@ input{
 
     textarea::placeholder{
         line-height:40px;
-        font-size: 1.0rem;
+        font-size: 0.8rem;
 
     }
 
@@ -902,12 +921,18 @@ input{
 .footer-menu{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
 }
 .footer-menu ul{
     display: flex;
     flex-direction: column;
     line-height: 60px;
+    margin-left: 0px;
+}
+
+.footer-menu ul li {
+    margin-left: 0;
+   
 }
 
 
