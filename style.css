@@ -21,6 +21,92 @@ body{
 
 /* ------------------------------------------- TRABALHANDO NO MENU HEADER -----------------------------*/
 
+
+
+/* ---------------------- ESTILIZANDO O MODAL------------------------*/
+
+/* Estilize o modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Estilize o formulário */
+  
+  #form-modal {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  #budget-enviar[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  #budget-enviar[type="submit"]:hover {
+    background-color: #0069d9;
+  }
+  
+
+
 a{
     text-decoration: none;
     color: var(--cinza-palavras-menores);
@@ -113,13 +199,13 @@ header {
     
       }
 
-      .to-email{
+      .to-contact{
         width: 150px;
         margin-left:70px;
         
       }
 
-      .to-email a{
+      .to-contact a{
         color: white;
       }
 
@@ -419,18 +505,6 @@ input{
 /* -----------------------------------TRABALHANDO NA SEGUNDA PARTE DA SEÇÃO RODAPÉ -----------------------------*/
 
 
-.footer-menu{
-    display: flex;
-    justify-content: space-between;
-    margin-right: 50px;
-
-}
-
-.footer-menu ul{
-    display: flex;
-    flex-direction: row;
-
-}
 
 
 .textfinal h2{
@@ -625,14 +699,20 @@ input{
         font-size: 1.8rem;
     }
 
-    .to-email{
-        width: 150px;
-        margin-left:50px;
+    .to-contact{
+        width: 80%;
+        margin-left:0px;
         
       }
 
-      .to-email a{
+      .to-contact a{
         color: white;
+      }
+
+      .picture{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
       }
 
 
@@ -764,7 +844,7 @@ input{
 
         
 
-    }
+    
 
     textarea::placeholder{
         line-height:40px;
@@ -784,7 +864,7 @@ input{
 .footer-contact{
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 50%;
     align-items: center;
     
     
@@ -852,25 +932,15 @@ input{
 
 
 
+.direitos-reservados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-
-
-@media screen and (max-width:800px){
-
-    .to-email{
-        width: 150px;
-        margin-left:105px;
-        
-      }
-
-      .to-email a{
-        color: white;
-      }
-
-
-
-
-
-
+body{
+    width: 95%;
+}
 
 }
+

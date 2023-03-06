@@ -13,7 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Hubballi&family=Inter:wght@400;700&family=Montserrat:wght@600&family=Poppins:wght@400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="app.js"></script>
     <title>Dev João Carvalho</title>
 </head>
 <body>
@@ -56,7 +55,7 @@
         </h1>
         <div class="picture">
             <img src="pngs/eu.png" alt="">
-            <button class="to-email"><a href="mailto:joao12carvalho@hotmail.com">Enviar Email</a></button>
+            <button id="budget" class="to-contact">Entre em contato</button>
         </div>
     </section>
 
@@ -161,6 +160,28 @@
         <h2>© devjoaocarvalho 2023. <br> 
             Todos os direitos-reservados.</h2>
     </footer>
+
+    <!------------MODAL ------------->
+<div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <form id ="form-modal" action="https://formspree.io/f/mjvdweoa" method="POST">
+        <label for="nome">Nome</label>
+        <input id="input-nome" name="Nome" type="text" id="nome" placeholder="Nome" required="required">
+        <label for="sobrenome">Sobrenome</label>
+        <input id="input-sobrenome" name="Sobrenome" type="text" id="sobrenome" placeholder="Sobrenome">
+        <label for="email">Email</label>
+        <input id="input-email" name="Email" type="email" id="email" placeholder="Email">
+        <label for="celular">Celular</label>
+        <input id="input-celular" name="Celular" type="tel" id="celular" placeholder="Celular" required="required">
+        <label for="mensagem">Envie uma mensagem</label>
+        <textarea name="Mensagem" id="mensagem" cols="30" rows="10"></textarea>
+        <button id="budget-enviar" type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+  
+  <script src="app.js"></script>
 </main>
 </body>
 </html>
