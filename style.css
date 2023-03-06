@@ -368,14 +368,14 @@ header {
     justify-content: flex-start;
 }
 
-.digite-nome{
+.input-nome{
     display: flex;
     flex-direction: column;
     width: 503px;
 
 }
 
-#digite-nome{
+#input-nome{
     display: flex;
     flex-direction: column;
     width: 503px;
@@ -808,6 +808,13 @@ input{
    
   /* ------------------------- FORMULARIO ------------------------------*/
   
+
+    #label-digite-nome{
+        font-size: 1.0rem;
+        margin-left: 0;
+        width: 60%;
+    }
+
   .section-form{
         display: flex;
         flex-direction: column;
@@ -819,7 +826,7 @@ input{
         word-wrap:break-word;
     }
 
-    .section-form .digite-nome{
+    .section-form #input-nome{
         display: flex;
         font-size: 1.1rem;
         align-items: center;
@@ -840,18 +847,20 @@ input{
         width: 50%;
         margin-left: 50px;
     }
-    input{
-        font-size: 1.0rem;
-        height: 50px;
-    }
 
+    #input-nome::placeholder{
+        font-size: 0.7rem;
+    }
+   
     
 
    
-
+    .form{
+        width: 100%;
+    }
     .form p{
-        font-size: 1rem;
-        width: 90%;
+        font-size:0.8rem;
+        width: 50%;
 
     }
 
