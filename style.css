@@ -154,6 +154,17 @@ header {
 
 .menu li a{
     margin: 30px;
+
+}
+
+.menu li a:hover{
+    color: white;
+    transition: all 0.1s;
+}
+
+.icons-menu li a :hover{
+    -webkit-transform: scale(1.5);
+    transition: all 0.5s;
 }
 
 
@@ -212,10 +223,17 @@ header {
         width: 150px;
         margin-left:70px;
         
+        
       }
 
       .to-contact a{
         color: white;
+        
+      }
+
+      #budget:hover{
+        -webkit-transform: scale(1.2);
+        transition: all 0.8s;
       }
 
     span {
