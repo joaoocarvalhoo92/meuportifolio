@@ -263,6 +263,8 @@ header {
 
 .icons-stacks img {
     margin-left: 60px;
+    width: 100px;
+    height: auto;
 
 }
 
@@ -270,6 +272,8 @@ header {
     font-family: var(--fonte-padrao);
     font-size: 48px;
     color: var(--cinza-titulos-principais);
+   
+
 }
 
 .mystacks h2 {
@@ -280,10 +284,36 @@ header {
 
 }
 
-#svg-python{
-    width: 100px;
+
+#svg-sql{
+    width: 80px;
     height: auto;
-    margin-top: 30px;
+    
+} 
+
+.icons-stacks{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.stack-legend{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+}
+
+.stack-legend h1{
+    font-size: 2.0rem;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    text-shadow: #302f2f 5px 0px 0px ;
+    
+       
+    
 }
 
 
@@ -772,26 +802,58 @@ input{
         margin-bottom: 120px;
     }
 
-    .mystacks h1{
+    #text-tecnology{
         width:90%;
         word-wrap: break-word;
         font-size: 2rem;
+        margin-left: 15%;
     }
 
     .mystacks h2{
-        width:80%;
+        width:70%;
         font-size: 1.0rem;
         height: 80px;
+        display: flex;
+        text-align: center;
     }
 
     .icons-stacks img{
-        width: 35%;
+        width: 40%;
 
     }
 
-    #svg-python{
+  
+
+    #svg-sql{
         width: 35%;
         height: auto;
+        
+    } 
+    
+    .icons-stacks{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        align-items: center;
+    }
+    
+    .stack-legend{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 90%;
+        
+    }
+    
+    .stack-legend h1{
+        font-size: 1.5rem;
+        display: flex;
+        align-items: flex-start;
+        text-shadow: #302f2f 5px 0px 0px ;
+        width: 70%;
+        
+           
+        
     }
 
 
