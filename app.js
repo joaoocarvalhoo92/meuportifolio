@@ -26,6 +26,15 @@ closeBtn.onclick = function() {
 
 
 
+const curriculoBtn = document.getElementById("curriculo-btn");
+
+curriculoBtn.addEventListener("click", () => {
+  window.open(curriculoBtn.querySelector("a").href);
+});
+
+
+
+
 
 
 
