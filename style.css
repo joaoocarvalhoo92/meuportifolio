@@ -407,6 +407,12 @@ header {
         color: white;
         }
 
+        .text-legend-powerbi a{
+          color: white;
+          text-decoration: underline;
+          font-size: 1.2rem;
+          }
+
 
 
 #analise-rh{
