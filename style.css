@@ -998,10 +998,10 @@ input{
     }
 
     #text-tecnology{
-        width:90%;
+        width:50%;
         word-wrap: break-word;
         font-size: 2rem;
-        margin-left: 15%;
+        
     }
 
     .mystacks h2{
@@ -1010,7 +1010,10 @@ input{
         height: 80px;
         display: flex;
         text-align: center;
+        margin-left: -50px;
     }
+
+    
 
     .icons-stacks img{
         width: 40%;
