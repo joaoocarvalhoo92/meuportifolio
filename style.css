@@ -896,6 +896,55 @@ input{
     font-size: 20px;
 }
 
+#chatbox {
+  height: 200px;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.from-bot {
+  background-color: #eee;
+}
+
+#from-user {
+  background-color: #d4e7f5;
+}
+
+#input-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#input {
+  flex: 1;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#send {
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#send:hover {
+  background-color: #0069d9;
+}
 
 
 
