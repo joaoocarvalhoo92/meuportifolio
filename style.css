@@ -1023,8 +1023,7 @@ input{
         flex-direction: column;
         margin-left: -100px;
         line-height: 50px;
-        background: rgba(209, 216, 219, 0.1);
-        width:100vw;
+        width:409px;
     }
 
     .icons-menu{
