@@ -1621,6 +1621,12 @@ body{
   border: 1px solid #888;
   width: 90%;
   max-width: 600px;
+ 
+}
+
+button#myBtnTmb{
+font-size: 9pt;
+width: 100%;
 }
 
 
