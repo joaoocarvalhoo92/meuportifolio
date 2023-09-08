@@ -22,228 +22,252 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Hubballi&family=Inter:wght@400;700&family=Montserrat:wght@600&family=Poppins:wght@400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <title>Dev João Carvalho</title>
-</head>
+    </head>
 <body>
-    <!--  TRABALHANDO O MENU DO TOPO-->
-    <header>
-        <div class="icons-menu">
-            <li><a target="_blank" href="https://github.com/joaoocarvalhoo92"><img src="svgs/github.svg"></a></li>
-            <li><a target="_blank" href="https://www.linkedin.com/in/joaocarvalho412753162/"><img src="svgs/linkedin.svg"></a></li>
-        </div>
-        <menu id="menu">
-            <div id="menu-bar" onclick="menuOnClick()">
-                <div id="bar1" class="bar"></div>
-                <div id="bar2" class="bar"></div>
-                <div id="bar3" class="bar"></div>
-            </div>
-            <nav class="nav" id="nav">
-                <ul class="menu">
-                    <li><a href="#home" class="active">Inicio</a></li>
-                    <li><a target="_blank" href="about.html">Sobre</a></li>
-                    <li><a href="#mystacks">Techs</a></li>
-                    <li><a href="#projects">Projetos</a></li>
-                    <li><a href="#Contact">Contato</a></li>
-                </ul>
-            </nav>
-        </menu>
-            <button id="myBtnTmb">Calcular TMB</button>
-        <div class="menu-bg" id="menu-bg"></div>
-    </header>
-<main class="page-content">
-  <!--  TRABALHANDO A SEÇÃO DE SAUDAÇÃO E MINHA FOTO AVATAR-->
-    <section class="saudacao">
-        <h1 class="saudacao-texto">
-            <span><</span>Oi 👋, seja bem vindo(a)<br>
-            Meu nome é<br>
-            <span class="textgradient">
-                João Carvalho
-            </span><br>
-            Construo coisas para web <span>></span>
-        </h1>
-        <div class="picture">
-            <img src="pngs/eu.png" alt="">
-            <button id="budget" class="to-contact">Entre em contato</button>
-            <button id="curriculo-btn">
-                <a href="curriculo/DESENVOLVEDOR JOAO CARVALHO.pdf" target="_blank" rel="noopener noreferrer">Ver currículo</a>
-            </button>
-              
+        <header class="menu-main">
+            <ul>
+                <li><a href="#home" class="active">Inicio</a></li>
+                <li><a target="_blank" href="about.html">Sobre</a></li>
+                <li><a href="#Contact">Contato</a></li>
+                <div class="icons-redeSocial">
+                    <a target="_blank" href="https://github.com/joaoocarvalhoo92"><img  id="githubpng" src="pngs/github.png"></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/joaocarvalho412753162/"><img id="linkedinpng" src="pngs/linkedin.png"></a>
+                </div>
+            </ul>
+      
+        </header>
+        <section class="parallax">
+            <img src="img/stars.png" id="stars" alt="">
+            <img src="img/moon.png" id="moon" alt="">
+            <h2 id="text" >Hello World</h2>
+            <a href="https://bit.ly/3K3sVPY" target="_blank" id="btn">WhatsApp</a>
+            <img src="img/mountains_behind.png" id="mountains_behind" alt="">
+            <img src="img/mountains_front.png" id="mountains_front" alt="">
 
-        </div>
-    </section>
+        </section>
 
-      <!--  TRABALHANDO A SEÇÃO DE TECNOLOGIAS QUE TRABALHO-->
+        <section class="body">
+                 <h2 id="text-welcome">SEJAM BEM VINDOS</h2>
+                 <p>Olá, Meu nome é João Paulo, 30 anos, sou programador júnior.<br>
+                Apaixonado pelo que faço, gosto de criar soluções na web<br>
+                e também soluções em desktop. Tenho conhecimentos e habilidades<br>
+                que podem ajudar a solucionar uma dor do seu negócio ou melhorar rotinas. </p>
+                <div class="buttons">
+                    <button id="button-tecnologys" class="buttons-items">
+                        <span class="text"><a href="#mystacks">Tecnologias</a></span>
+                    </button>
+                    <button id="button-certifications" class="buttons-items">
+                        <span class="text"><a href="#text-certifications">Certificados</a></span>
+                    </button>
+                    <button id="button-projects" class="buttons-items">
+                        <span class="text"><a href="#text-projects">Projetos</a></span>
+                    </button>
+                </div>
+
+                  <!--  TRABALHANDO A SEÇÃO DE TECNOLOGIAS QUE TRABALHO-->
     <section class="mystacks" id="mystacks">
-            <h1 id="text-tecnology">Tecnologias</h1>
-            <h2>Tecnologias que tenho trabalhado ultimamente</h2>
-        <div class="icons-stacks">
-            <div class="stack-legend">
-                <img src="svgs/html.svg">
-                <h1>HTML</h1>
-            </div>
-            <div class="stack-legend">
-                 <img src="svgs/css.svg">
-                <h1>CSS</h1>
-            </div>
-            <div class="stack-legend">
-            <img src="svgs/js.svg">
-                <h1>JavaScript</h1>
-            </div>
-            <div class="stack-legend">
-            <img src="svgs/studiocode.svg">
-                <h1>VsCode</h1>
-            </div>
-            <div class="stack-legend">
-            <img src="svgs/git.svg">
-             <h1>Github</h1>
-            </div>
-            <div class="stack-legend">
-            <img id="svg-java" src="svgs/java.svg">
-                <h1>Java</h1>
-            </div>
-            <div class="stack-legend">
-            <img id="svg-sql" src="svgs/sqlserver.svg">
-                <h1>SqlServer</h1>
-            </div>
-            <div class="stack-legend">
-            <img id="svg-python" src="svgs/python.svg">
-                <h1>Python</h1>
-            </div>
+        <h1 id="text-tecnology">TECNOLOGIAS</h1>
+        <h2>Tecnologias que tenho trabalhado ultimamente</h2>
+    <div class="icons-stacks">
+        <div class="stack-legend">
+            <img src="svgs/html.svg">
+            <h1>HTML</h1>
         </div>
+        <div class="stack-legend">
+             <img src="svgs/css.svg">
+            <h1>CSS</h1>
+        </div>
+        <div class="stack-legend">
+        <img src="svgs/js.svg">
+            <h1>JavaScript</h1>
+        </div>
+        <div class="stack-legend">
+        <img src="svgs/studiocode.svg">
+            <h1>VsCode</h1>
+        </div>
+        <div class="stack-legend">
+        <img src="svgs/git.svg">
+         <h1>Github</h1>
+        </div>
+        <div class="stack-legend">
+        <img id="svg-java" src="svgs/java.svg">
+            <h1>Java</h1>
+        </div>
+        <div class="stack-legend">
+        <img id="svg-sql" src="svgs/sqlserver.svg">
+            <h1>SqlServer</h1>
+        </div>
+        <div class="stack-legend">
+        <img id="svg-python" src="svgs/python.svg">
+            <h1>Python</h1>
+        </div>
+    </div>
     </section>
 
-     <!--  TRABALHANDO A SEÇÃO PROJETOS QUE FIZ ATÉ AGORA-->
-    
-     <div class="title-projects">
-        <h1>Projetos</h1>
-        <h2>Coisas que construí até agora</h2>
-     </div>
-    <section class="projects">
-
-        <div class="photo-container">
-            <img src="pngs/bootcamp.png" alt="Descrição da imagem 1">
-            <div class="text-legend">
-                <h1>Bootcamp DNC</h1>
-                <p>Este é um projeto, feito em atividades com a escola DNC.</p>
-                <h3>Techs: Html e Css</h3>
-                <a  id="project-portifolio" target="_blank" href="https://github.com/joaoocarvalhoo92/projetoBootcampDNC">Ver Código</a>
-            </div>
-        </div>
-            <div class="photo-container">
-                <img src="pngs/portifioliomaria.png" alt="Descrição da imagem 2">
-                <div class="text-legend">
-                    <h1>Portfólio</h1>
-                    <p>Mais um projeto realizado em atividades com a escola de tecnologia DNC.</p>
-                    <h3>Techs: Html e Css</h3>
-                    <a  id="project-bootcamp" target="_blank" href="https://github.com/joaoocarvalhoo92/sitePortifolio">Ver Código</a>
-                </div>
-            </div>
-
-        <div class="photo-container">
-            <img src="pngs/sistemaComercio.png" alt="Descrição da imagem 2">
-            <div class="text-legend">
-                <h1>Sistema para loja</h1>
-                <p>Estou trabalhando neste projeto, desenvolvendo meu próprio sistema desktop para minha loja de roupas, mas ele pode ser adaptado para outras necessidades.</p>
-                <h3>Techs: Python e SQLServer</h3>
-                <a id="project-store" target="_blank" href="https://github.com/joaoocarvalhoo92/sistemaLoja">Ver Código</a>
-            </div>
-            </div>
-
-        <div class="photo-container">
-            <img src="pngs/calculadora.png" alt="Descrição da imagem 2">
-            <div class="text-legend">
-                <h1>Calculadora
-                </h1>
-                <p>Calculadora construida usando HTML, CSS e JavaScript.</p>
-                <h3>Techs: HTML, CSS e JavaScript</h3>
-                <a  id="project-calculator" target="_blank" href="https://github.com/joaoocarvalhoo92/Calculadora">Ver Código</a>
-            </div>
-            </div>
-
-            <div class="photo-container-powerbi">
-                <iframe id="analise-rh" title="Analise de Rh" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNGViNmI3NGYtNGFlYy00OWFiLWE1NTctN2QyMjJkMDcwYjJhIiwidCI6ImRiZjA0NGMwLTBjZDMtNDgzOS05YjI1LTI2N2I2MWFhNThiYiJ9" frameborder="0" allowFullScreen="true"></iframe>
-                <div class="text-legend-powerbi">
-                    <h1>Análise para RH</h1>
-                    <p>Toda empresa tem dados, mas algumas ainda não sabem oque fazer com eles.
-                        Ferramentas como Power BI auxiliam empresas a saber o seu estado atual 
-                        por meio de análises e dashboards, e saber quais ações precisam ser tomadas para o futuro.
-                        Esta análise de dados, apresenta informações sobre salários, funcionários,
-                        setores, faixas etárias e regiões.
-                    </p><br>
-                    <a  id="project-calculator" target="_blank" href="https://app.powerbi.com/view?r=eyJrIjoiNGViNmI3NGYtNGFlYy00OWFiLWE1NTctN2QyMjJkMDcwYjJhIiwidCI6ImRiZjA0NGMwLTBjZDMtNDgzOS05YjI1LTI2N2I2MWFhNThiYiJ9">Ver em Full Screen</a>
-                </div>
-            </div>
-
-    </section>
+    <!------------------------------------------------------------CERTIFICAÇÕES--------------------------------------------------------------------->
 
 
-
-
-<!------------------------------------------------------------CERTIFICAÇÕES--------------------------------------------------------------------->
-
-<div class="title-certificados">
-    <h1>Certificações</h1>
-    <h2>Minhas últimas certificações</h2>
- </div>
-    <section class="certificados">
-       
-            <div class="photo-container-certificados">
-                <img src="certificados/CERTIFICADO DESENVOLVIMENTO WEB COM HTML E CSS-1.png" alt="Descrição da imagem 1">
-                <div class="text-legend-certificados">
-                    <a  id="project-portifolio" target="_blank" href="https://www.linkedin.com/feed/update/urn:li:activity:7036078647698440192/">Ver no Linkedin</a>
-                </div>
-            </div>
-                <div class="photo-container-certificados">
-                    <img src="certificados/Introdução a lógica de programação e fundamentos javascript-1.png" alt="Descrição da imagem 2">
-                    <div class="text-legend-certificados">
-                        <a  id="project-bootcamp" target="_blank" href="https://www.linkedin.com/feed/update/urn:li:activity:7036078844776230913/">Ver no Linkedin</a>
-                    </div>
-                </div>
-                <div class="photo-container-certificados">
-                    <img src="certificados/Java completo e orientação a objetos.jpg" alt="Descrição da imagem 2">
-                    <div class="text-legend-certificados">
-                        <a  id="project-bootcamp" target="_blank" href="https://www.linkedin.com/posts/joaocarvalho412753162_programacao-java-desenvolvedor-activity-7042290979118157824-Sbi0?utm_source=share&utm_medium=member_desktop">Ver no Linkedin</a>
-                    </div>
-                </div>
+    <section style="margin-bottom: 300px"   class="certificados">
      </section>
+           <!--  TRABALHANDO A SEÇÃO CERTIFICAÇÕES-->
+           <div class="title-certificados">
+            <h1 id="text-certifications">CERTIFICAÇÕES</h1>
+            <h2>Minhas últimas certificações</h2>
+         </div>
+        <div class="wrapper">
+            <div class="carousel owl-carousel">
+                <div class="card card1">
+                    <div class="photo-container-certificados">
+                        <img src="certificados/CERTIFICADO DESENVOLVIMENTO WEB COM HTML E CSS-1.png" alt="Descrição da imagem 1">
+                            <div class="text-legend-certificados">
+                                <a   target="_blank" href="https://www.linkedin.com/feed/update/urn:li:activity:7036078647698440192/">Ver no Linkedin</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card card2">
+                    <div class="photo-container-certificados">
+                        <img src="certificados/Introdução a lógica de programação e fundamentos javascript-1.png" alt="Descrição da imagem 2">
+                        <div class="text-legend-certificados">
+                            <a   target="_blank" href="https://www.linkedin.com/feed/update/urn:li:activity:7036078844776230913/">Ver no Linkedin</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card card3">
+                    <div  class="photo-container-certificados">
+                        <img src="certificados/Java completo e orientação a objetos.jpg" alt="Descrição da imagem 2">
+                        <div class="text-legend-certificados">
+                            <a target="_blank" href="https://www.linkedin.com/posts/joaocarvalho412753162_programacao-java-desenvolvedor-activity-7042290979118157824-Sbi0?utm_source=share&utm_medium=member_desktop">Ver no Linkedin</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card card4">
+                    <div  class="photo-container-certificados">
+                        <img src="certificados/Java completo e orientação a objetos.jpg" alt="Descrição da imagem 2">
+                        <div class="text-legend-certificados">
+                            <a target="_blank" href="https://www.linkedin.com/posts/joaocarvalho412753162_programacao-java-desenvolvedor-activity-7042290979118157824-Sbi0?utm_source=share&utm_medium=member_desktop">Ver no Linkedin</a>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
 
+      <!--  TRABALHANDO A SEÇÃO PROJETOS QUE FIZ ATÉ AGORA-->
+      <div class="title-projects">
+        <h1 id="text-projects">PROJETOS</h1>
+        <h2 >Coisas que construí até agora</h2>
+     </div>
+    <div class="wrapper">
+        <div class="carousel owl-carousel">
+            <div class="card card1">
+                <div class="photo-container-projetos">
+                    <img src="pngs/bootcamp.png" alt="Descrição da imagem 1">
+                    <div class="text-legend">
+                        <h1>Bootcamp DNC</h1>
+                        <p>Este é um projeto, feito em atividades com a escola DNC.</p>
+                        <h3>Techs: Html e Css</h3>
+                        <a  id="project-portifolio" target="_blank" href="https://github.com/joaoocarvalhoo92/projetoBootcampDNC">Ver Código</a>
+                    </div>
+                </div>
+            </div>
 
+            <div class="card card2">
+                <div class="photo-container-projetos">
+                    <img src="pngs/portifioliomaria.png" alt="Descrição da imagem 2">
+                    <div class="text-legend">
+                        <h1>Portfólio</h1>
+                        <p>Mais um projeto realizado em atividades com a escola de tecnologia DNC.</p>
+                        <h3>Techs: Html e Css</h3>
+                        <a  id="project-bootcamp" target="_blank" href="https://github.com/joaoocarvalhoo92/sitePortifolio">Ver Código</a>
+                    </div>
+                </div>
+            </div>
 
+            <div class="card card3">
+                <div class="photo-container-projetos">
+                    <img src="pngs/sistemaComercio.png" alt="Descrição da imagem 2">
+                    <div class="text-legend">
+                        <h1>Sistema para loja</h1>
+                        <p>Estou trabalhando neste projeto, desenvolvendo meu próprio sistema desktop para minha loja de roupas, mas ele pode ser adaptado para outras necessidades.</p>
+                        <h3>Techs: Python e SQLServer</h3>
+                        <a id="project-store" target="_blank" href="https://github.com/joaoocarvalhoo92/sistemaLoja">Ver Código</a>
+                    </div>
+                    </div>
+            </div>
 
+            <div class="card card4">
+                <div class="photo-container-projetos">
+                    <img src="pngs/calculadora.png" alt="Descrição da imagem 2">
+                    <div class="text-legend">
+                        <h1>Calculadora
+                        </h1>
+                        <p>Calculadora construida usando HTML, CSS e JavaScript.</p>
+                        <h3>Techs: HTML, CSS e JavaScript</h3>
+                        <a  target="_blank" href="https://github.com/joaoocarvalhoo92/Calculadora">Ver Código</a>
+                    </div>
+                    </div>
+            </div>
 
+        </div>
+    </div>
+
+    
+    
+
+    <section  style="margin-bottom:300px"  class="projects">
+
+    </section>
 
       <!--  TRABALHANDO A SEÇÃO FORMÚLARIO-->
-    <section class="section-form">
+      <div class="form">
+        <span class="title">Entre em contato, vamos tirar seu projeto do papel !</span>
+        <p>Em breve será respondido(a)</p>
         <form class="form" action="https://formspree.io/f/mjvdweoa" method="POST">
-            <h2>
-                Deixe-me uma mensagem aqui <br>
-                <span> Isso será motivador.</span>
-            </h2>
-            <label  id="label-digite-nome">
-                Digite seu nome : 
-            </label>
-            
-            <input  id="input-nome" name="Names" id="text-nameperson" placeholder="Escreva o seu nome aqui" type="text">
-            <p>*Não obrigatório</p>
-            <div class="textarea-submit">
-                <textarea class="textplaceholder" rows="10" cols="20" name="Mensagem"placeholder="Digite sua mensagem aqui" type="text" required="required"></textarea>
-                <button  type="submit">Enviar</button>
+          <div class="group">
+            <input  id="input-nome" name="Names" placeholder="‎" type="text" required="required">
+          <label for="name">Nome</label>
+          </div>
+      <div class="group">
+          <input id="input-email" name="Email" placeholder="‎" type="email">
+          <label for="email">Email</label>
+          </div>
+          <div class="group">
+            <input id="input-telefone" name="Telefone" placeholder="‎" type="phone">
+            <label for="phone">Telefone</label>
             </div>
-         </form>
-    </section>
+      <div class="group">
+        <textarea id="input-mensagem" name="Mensagem" class="textplaceholder" rows="10" cols="20" placeholder="‎"  rows="5" required="required"></textarea>
+          <label for="mensagem">Mensagem</label>
+      </div class="button-submit">
+          <button id="button-form" type="submit">Enviar</button>
+        </form>
+      </div>
+
+
+
+
           <!--  TRABALHANDO O RODAPÉ-->
-    <footer class="footer-contact" id="Contact">
+          <footer class="footer-contact" id="Contact">
             <div class="email-tel">
                 <h2>+55(11)98538-6994</h2>
                 <h2><a href="mailto:joao12carvalho@hotmail.com">joao12carvalho@hotmail.com</a></h2>
             </div>
-            <div class="border-bottom"></div>
             <div class="menu-footer-icons">
                 <li><a target="_blank" href="https://github.com/joaoocarvalhoo92"><img src="svgs/github.svg"></a></li>
                 <li><a target="_blank" href="https://www.linkedin.com/in/joaocarvalho412753162/"><img src="svgs/linkedin.svg"></a></li>
             </div>
-    </footer>
+        </footer>
+
+        <div class="line-division">
+            <span>.</span>
+          </div>
 
         <footer class="footer-menu">
                 <ul>
@@ -253,69 +277,19 @@
                     <li><a href="#projects">Projetos</a></li>
                     <li><a href="#Contact">Contato</a></li>
                 </ul>
-                <div class="textfinal">
-                    <h2>Projetado e construído por <br><span class="textgradient">João Carvalho</span></h2>
-                </div>
-        </footer>
+            </footer>
     <footer class="direitos-reservados">
         <h2>© devjoaocarvalho 2023. <br> 
             Todos os direitos-reservados.</h2>
     </footer>
 
-    <!------------MODAL ------------->
-    <div id="modal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <form id ="form-modal" action="https://formspree.io/f/mjvdweoa" method="POST">
-        <label for="nome">Nome</label>
-        <input id="input-nome" name="Nome" type="text" id="nome" placeholder="Nome" required="required">
-        <label for="sobrenome">Sobrenome</label>
-        <input id="input-sobrenome" name="Sobrenome" type="text" id="sobrenome" placeholder="Sobrenome">
-        <label for="email">Email</label>
-        <input id="input-email" name="Email" type="email" id="email" placeholder="Email">
-        <label for="celular">Celular</label>
-        <input id="input-celular" name="Celular" type="tel" id="celular" placeholder="Celular" required="required">
-        <label for="mensagem">Envie uma mensagem</label>
-        <textarea name="Mensagem" id="mensagem" cols="30" rows="10"></textarea>
-        <button id="budget-enviar" type="submit">Enviar</button>
-      </form>
-    </div>
-  </div>
-  
 
 
+    
+</section>
+
+<script src="app.js"></script>
 
 
-  <!-------MODAL PARA CALCULAR TAXA METABOLICA BASAL--------->
-  
-
- 
-
-  <div id="myModalTmb" class="modalTmb">
-    <div class="modal-contentTmb">
-      <span class="closeTmb">&times;</span>
-      <h2>TAXA METABÓLICA BASAL</h2>
-      <form id="myFormTmb">
-        <label for="gender">Sexo:</label>
-        <select id="gender" name="gender">
-          <option value="male">Masculino</option>
-          <option value="female">Feminino</option>
-        </select><br><br>
-        <label for="weight">Peso Atual (kg):</label>
-        <input type="number" id="weight" name="weight"><br><br>
-        <label for="height">Altura (cm):</label>
-        <input type="number" id="height" name="height"><br><br>
-        <label for="age">Idade:</label>
-        <input type="number" id="age" name="age"><br><br>
-        <input type="submit" value="Calcular" id="btn-calcular">
-      </form>
-      <p id="result"></p>
-    </div>
-  </div>
-  <script src="app.js"></script>
-
-
-  
-</main>
 </body>
 </html>

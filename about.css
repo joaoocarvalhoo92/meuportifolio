@@ -4,18 +4,6 @@
     padding: 0;
 }
 
-body  {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    background: black;
-    margin-left: 177px;
-    margin-right: 230px;
-    box-sizing: border-box;
-    
-
-}
 
 :root{
     --cinza-titulos-principais:#CCCCCC;
@@ -36,7 +24,7 @@ li{
 }
 
 h2{
-    color: var(--cinza-palavras-menores);
+   color: white;
     font-family: var(--fonte-padrao);
     font-weight: normal;
     width: 50%;
@@ -50,10 +38,20 @@ body  {
     padding: 0;
     list-style: none;
     text-decoration: none;
-    background: black;
-    margin-left: 177px;
-    margin-right: 230px;
+
     box-sizing: border-box;
+
+}
+
+#stars  {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+    /* background: url(img/stars.png) no-repeat center center fixed; */
+    background-size: cover;
+    background: linear-gradient(#2b1055 , #7597de);
 
 }
 
@@ -68,7 +66,7 @@ body  {
 .header .menu{
     display: flex;
     flex-direction: row;
-    justify-content: end;
+  
 
 }
 
