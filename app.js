@@ -24,36 +24,50 @@ window.addEventListener('scroll',function(){
 // CAROUSEL
 
 $(".carousel").owlCarousel({
-    margin:80,
+    margin: 80,
     loop: true,
-    autoplay:true,
-    autplayTimeout:2000,
-    autoplayHoverpause:true,
-    responsive:{
-        400:{
-            items:1,
-            nav:false
+    autoplay: true,
+    autoplayTimeout: 2000,
+    autoplayHoverpause: true,
+    responsive: {
+        0: {
+            items: 1, // Em telas menores, mostra apenas 1 item por vez
+            nav: false
         },
-        1000:{
-            items:2,
-            nav:false
+        768: {
+            items: 2,
+            nav: false
         },
-        1100:{
-            items:2,
-            nav:false
+        1100: {
+            items: 2,
+            nav: false
         },
-        1300:{
-            items:2,
-            nav:false
+        1300: {
+            items: 2,
+            nav: false
         },
-        1500:{
-            items:3,
-            nav:false
+        1500: {
+            items: 3,
+            nav: false
         },
-        1800:{
-            items:3,
-            nav:false
+        1800: {
+            items: 3,
+            nav: false
         }
     }
 });
 
+
+function menuOnClick() {
+    document.getElementById("menu-bar").classList.toggle("change");
+    document.getElementById("nav").classList.toggle("change");
+    document.getElementById("menu-bg").classList.toggle("change-bg");
+    document.getElementById("nav").classList.toggle("show");
+  
+
+  //Adiciona ou remove a classe menu-open na página
+  document.querySelector('.page-content').classList.toggle('menu-open');
+  
+
+}
+  

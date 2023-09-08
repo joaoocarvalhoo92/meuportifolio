@@ -29,17 +29,30 @@
     </head>
 <body>
         <header class="menu-main">
-            <ul>
-                <li><a href="#home" class="active">Inicio</a></li>
-                <li><a target="_blank" href="about.html">Sobre</a></li>
-                <li><a href="#Contact">Contato</a></li>
-                <div class="icons-redeSocial">
-                    <a target="_blank" href="https://github.com/joaoocarvalhoo92"><img  id="githubpng" src="pngs/github.png"></a>
-                    <a target="_blank" href="https://www.linkedin.com/in/joaocarvalho412753162/"><img id="linkedinpng" src="pngs/linkedin.png"></a>
+            <div class="icons-menu">
+                <li><a target="_blank" href="https://github.com/joaoocarvalhoo92"><img src="svgs/github.svg"></a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/joaocarvalho412753162/"><img src="svgs/linkedin.svg"></a></li>
+            </div>
+            <menu id="menu">
+                <div id="menu-bar" onclick="menuOnClick()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
                 </div>
-            </ul>
-      
+                <nav class="nav" id="nav">
+                    <ul class="menu">
+                        <li><a href="#home" class="active">Inicio</a></li>
+                        <li><a target="_blank" href="about.html">Sobre</a></li>
+                        <li><a href="#mystacks">Techs</a></li>
+                        <li><a href="#projects">Projetos</a></li>
+                        <li><a href="#Contact">Contato</a></li>
+                    </ul>
+                </nav>
+            </menu>
+                
         </header>
+
+
         <section class="parallax">
             <img src="img/stars.png" id="stars" alt="">
             <img src="img/moon.png" id="moon" alt="">
@@ -67,11 +80,12 @@
                         <span class="text"><a href="#text-projects">Projetos</a></span>
                     </button>
                 </div>
+                
 
                   <!--  TRABALHANDO A SEÇÃO DE TECNOLOGIAS QUE TRABALHO-->
     <section class="mystacks" id="mystacks">
         <h1 id="text-tecnology">TECNOLOGIAS</h1>
-        <h2>Tecnologias que tenho trabalhado ultimamente</h2>
+        <h2 id="legend-tec">Tecnologias que tenho trabalhado ultimamente</h2>
     <div class="icons-stacks">
         <div class="stack-legend">
             <img src="svgs/html.svg">
