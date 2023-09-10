@@ -123,6 +123,14 @@ body{
     
 }
 
+
+.body2{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: #2b1055;
+    width: 100%;
+}
+
 header{
     position: absolute;
     top: 0;
