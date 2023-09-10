@@ -43,15 +43,15 @@ $(".carousel").owlCarousel({
             nav: false
         },
         1300: {
-            items: 2,
+            items: 4,
             nav: false
         },
         1500: {
-            items: 3,
+            items: 4,
             nav: false
         },
         1800: {
-            items: 3,
+            items: 4,
             nav: false
         }
     }

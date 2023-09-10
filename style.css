@@ -31,6 +31,13 @@ li {
     list-style: none;
 }
 
+
+.icons-menu{
+    display: flex;
+    gap: 20px;
+   
+}
+
 #button-tecnologys{
     align-items: center;
     background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
@@ -127,9 +134,11 @@ body{
 .body2{
     min-height: 100vh;
     overflow-x: hidden;
-    background: #2b1055;
+    background: #0f0b16;
     width: 100%;
 }
+
+
 
 header{
     position: absolute;
@@ -327,14 +336,14 @@ header ul li a:hover{
 
 }
 
-.mystacks h2 {
+/* .mystacks h2 {
     font-size: 5rem;
     color: aliceblue;
     text-shadow: aliceblue 1px 1px 5px;
     font-weight: normal;
    
 
-}
+} */
 
 .mystacks #text-tecnology{
     font-size: 3rem;
@@ -342,11 +351,12 @@ header ul li a:hover{
 
 }
 
+
 .mystacks h2 {
-    font-size: 2rem;
+    font-size: 1rem;
     color: aliceblue;
     font-weight: normal;
-    text-shadow: aliceblue 1px 1px 5px;
+    
 
 }
 
@@ -381,9 +391,6 @@ header ul li a:hover{
     margin-left: 50px;
     color: aliceblue;
 
-    
-       
-    
 }
 
 
@@ -451,13 +458,14 @@ header ul li a:hover{
 
 /*----------------TRABALHANDO NA AREA DE CERIFICAÇÕES----------------------------------*/
 
+
 .title-certificados{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     color: var(--cinza-titulos-principais);
-    font-size: 1.5rem;
+    font-size: 0.5rem;
     display: flex;
     align-items: center;
     margin-left: 50px;
@@ -491,44 +499,17 @@ header ul li a:hover{
    
 }
 
-.photo-container-certificados img {
-    width: 100%;
-    height: 350px;
-    margin-top: 0px;
-    padding: 0;
-    margin: 0;
-    border-radius: 20px 20px 0px 0px;
 
-    
-}
 
-.photo-container-certificados:hover {
-    border-color: #fff;
 
-  }
-
-.photo-container-certificados{
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    transition: border-color 0.3s ease-in-out;
-    border: 4px solid transparent;
-    width: 500px;
-    align-items: center;
-}
-
-.text-legend-certificados{
+/* .text-legend-certificados{
     align-items: center;
     border-radius: 0px 0px 15px 15px;
     padding: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     transition: border-color 0.3s ease-in-out;
     
-  }
+  } */
 
  
     .text-legend-certificados a{
@@ -539,6 +520,91 @@ header ul li a:hover{
         }
 
        
+
+        
+        .photo-container-certificados img {
+            width: 100%;
+            height: 50%;
+            padding: 0;
+            margin: 0;
+            border-radius: 20px 20px 0px 0px;
+            
+        }
+        
+        .photo-container-certificados:hover {
+            border-color: #fff;
+        
+          }
+        
+        .photo-container-certificados{
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            transition: border-color 0.3s ease-in-out;
+            border: 4px solid transparent;
+            width: 100%;
+            height: 500px;
+            align-items: center;
+        }
+        
+        .text-legend-certificados{
+            align-items: center;
+            border-radius: 0px 0px 15px 15px;
+            padding: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            transition: border-color 0.3s ease-in-out;
+            
+          }
+        
+         
+            .text-legend-cerificados a{
+                margin-top:5px ;
+                font-size: 1.2rem;
+                color: white;
+              
+                }
+        
+        
+          .text-legend h1{
+          margin-top:5px ;
+          font-size: 1.5rem;
+          color: white;
+          }
+        
+          .text-legend h3{
+            margin-top:5px ;
+            font-size: 1.2rem;
+            color: white;
+            }
+        
+            .text-legend p{
+                margin-top:5px ;
+                font-size: 1.2rem;
+                color: white;
+                }
+        
+        
+                .text-legend a{
+                    font-size: 1.0rem;
+                    color: white;
+                    text-decoration: underline;
+                    }
+        
+        
+        
+        
+        .title-projects{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        
+        }
+        
 
 
 /* -----------------------------------TRABALHANDO NA SEÇÃO PROJETOS QUE FIZ ATE AGORA -----------------------------*/
@@ -557,78 +623,6 @@ header ul li a:hover{
     font-weight: normal;
     text-shadow: aliceblue 1px 1px 5px;
     
-}
-
-
-
-.photo-container-powerbi:hover {
-    border-color: #fff;
-
-  }
-
-.photo-container-powerbi{
-    height: auto;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    transition: border-color 0.3s ease-in-out;
-    border: 4px solid transparent;
-    width: 800px;
-}
-
-.text-legend-powerbi{
-    margin: 0;
-    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
-    font-size: 14px;
-    text-align: center;
-    width: 800px;
-    height: 300px;
-    margin-left: 0px;
-    color: #000;
-    border-radius: 0px 0px 15px 15px;
-    padding: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    transition: border-color 0.3s ease-in-out;
-    border: 4px solid transparent;
-  }
-
-  .text-legend-powerbi h1{
-  margin-top:5px ;
-  font-size: 1.5rem;
-  color: white;
-  }
-
-  .text-legend-powerbi h3{
-    margin-top:5px ;
-    font-size: 1.2rem;
-    color: white;
-    }
-
-    .text-legend-powerbi p{
-        margin-top:5px ;
-        font-size: 1.2rem;
-        color: white;
-        }
-
-        .text-legend-powerbi a{
-          color: white;
-          text-decoration: underline;
-          font-size: 1.2rem;
-          }
-
-          .wrapper{
-            margin-top: 100px;
-          }
-
-
-#analise-rh{
-    width: 800px;
-    height: 50vh;
-   
 }
 
 
@@ -720,13 +714,25 @@ header ul li a:hover{
 
 /* -----------------------------------TRABALHANDO NA SEÇÃO DO FORMULARIO -----------------------------*/
 
+.formulario{
+
+    width: 50%;
+    margin-left: 400px;
+}
+
+
+
+
 .form {
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
-
+    width: 100%;
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
+    
+ 
   }
   
   .title {
@@ -735,11 +741,7 @@ header ul li a:hover{
     text-align: center;
   }
   
-  .form {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-  }
+ 
   
   .group {
     position: relative;
@@ -900,12 +902,35 @@ header ul li a:hover{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  ---------- RESPONSIVIDADE ----------------------------------*/
 
-/* ------------------------- MENU ------------------------------*/
+
+
 @media screen and (max-width:800px){
 
     /*-------MENU HAMBURGUER--------*/
+
+    .icons-menu{
+        display: flex;
+        gap: 20px;
+       
+    }
 
     #menu {
         margin-top: 50px;
@@ -1071,14 +1096,6 @@ header ul li a:hover{
     }
     
 
-    
-    
-    
-    
-    .icons-stacks img {
-        margin-left: -100px;
-        width: 3rem;
-    }
 
 
     section .body {
@@ -1086,12 +1103,12 @@ header ul li a:hover{
     }
     
 
-    #legend-tec {
+   .mystacks {
         font-size: 1rem;
-        width: 80%;
+        width: 100%;
+        text-align: center;
+     
         
-    
-    
     }
 
 
@@ -1119,75 +1136,29 @@ header ul li a:hover{
 }
 
 
-.mystacks {
-    text-align: center;
-}
 
-.icons-stacks {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
 .stack-legend {
     flex-basis: calc(33.33% - 20px); /* Define o tamanho base de cada item com margem */
-    margin: 10px; /* Espaçamento entre os itens */
     text-align: center;
-}
+    margin-right: 50px;
 
-.stack-legend img {
-    max-width: 100%;
-    height: auto;
 }
 
 
 
-/*-------CERTIFICAÇÕES------------*/
 
 
 
-.title-certificados{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    color: var(--cinza-titulos-principais);
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    margin-left: 50px;
-    margin-top: 250px;
- 
-    
-}
 
 
-.title-certificados h2{
-    font-size: 2rem;
-    color: aliceblue;
-    font-weight: normal;
-    text-shadow: aliceblue 1px 1px 5px;
-}
-
-#text-certifications{
-    font-size: 3rem;
-    color: aliceblue;
-    font-weight: bold;
-}
 
 
-.certificados {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 150px;
-    flex-wrap: wrap;
-    gap: 20px;
-   
-}
+
+/*------CONFIG DO CARROSEL*/
 
 .photo-container-certificados img {
-    width: 5;
+    width: 1px;
     height: 300px;
     margin-top: 0px;
     padding: 0;
@@ -1197,40 +1168,18 @@ header ul li a:hover{
     
 }
 
-.photo-container-certificados:hover {
-    border-color: #fff;
-
-  }
-
-.photo-container-certificados{
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    transition: border-color 0.3s ease-in-out;
-    border: 4px solid transparent;
-    width: 2opx;
-    align-items: center;
+.wrapper{
+    width: 100%;
 }
 
-.text-legend-certificados{
-    align-items: center;
-    border-radius: 0px 0px 15px 15px;
-    padding: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    transition: border-color 0.3s ease-in-out;
-    
-  }
 
- 
-    .text-legend-certificados a{
-        margin-top:5px ;
-        font-size: 1.2rem;
-        color: white;
-      
+        
+
+        .formulario{
+
+            width: 100%;
+            margin-left: -0px;
+          
         }
 
 
@@ -1240,4 +1189,64 @@ header ul li a:hover{
 
 
 
+
+
+        #text-certifications{
+            font-size: 2.7rem;
+            margin-right: 20%;
+
+
+        }
+
+
+        #ultimas-certificacoes{
+            font-size: 1.5rem;
+            margin-right: 20%;
+            text-align: center;
+        }
+
+
+        #text-projects{
+            font-size: 2.7rem;
+           
+        }
+
+
+        #text-coisasqueconstrui{
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+
+        .title-projects{
+        margin-top: 200px;
+        }
+
+        #text-obrigado{
+            margin-left: 100px;
+        }
+
+
+
+
+
+
+        .email-tel{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            font-size: 0.7rem;
+      
+        }
+
+
+
+
+        .direitos-reservados{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
 }
