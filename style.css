@@ -208,7 +208,7 @@ header ul li a:hover{
 
 .body{
 
-    padding: 100px;
+    padding: 10px;
     background-color: #1c0522;
     display: flex;
     justify-content: center;
@@ -273,8 +273,9 @@ header ul li a:hover{
 
 .body p {
     color: aliceblue;
-    text-align: center;
+    text-align:center;
     font-size: 1rem;
+    width: 100%;
 }
 
 
@@ -614,6 +615,9 @@ header ul li a:hover{
     font-size: 3rem;
     color: aliceblue;
     font-weight: bold;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     
 }
 
@@ -622,6 +626,9 @@ header ul li a:hover{
     color: aliceblue;
     font-weight: normal;
     text-shadow: aliceblue 1px 1px 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     
 }
 
@@ -662,6 +669,11 @@ header ul li a:hover{
     padding: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     transition: border-color 0.3s ease-in-out;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+   
     
   }
 
@@ -670,6 +682,9 @@ header ul li a:hover{
         margin-top:5px ;
         font-size: 1.2rem;
         color: white;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
       
         }
 
@@ -684,12 +699,18 @@ header ul li a:hover{
     margin-top:5px ;
     font-size: 1.2rem;
     color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     }
 
     .text-legend p{
         margin-top:5px ;
         font-size: 1.2rem;
         color: white;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
         }
 
 
@@ -697,6 +718,7 @@ header ul li a:hover{
             font-size: 1.0rem;
             color: white;
             text-decoration: underline;
+    
             }
 
 
@@ -708,6 +730,14 @@ header ul li a:hover{
     justify-content: space-evenly;
     align-items: center;
 
+}
+
+
+.text-legend{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 
